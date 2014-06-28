@@ -5,8 +5,21 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag "Icon.ico" %>
 </head>
 <body>
+
+<%= image_tag("DevCo.png", :id => "DevCo") %>
+<%= image_tag("Logo.png", :id => "Logo") %>
+
+<div id="nav_wrapper">
+	<ul id="nav">
+		<li><a href="#what_we_do">What We Do</a></li>
+		<li><a href="#how_we_work">How We Work</a></li>
+		<li><a href="#about_us">About Us</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</div>
 
 <%= yield %>
 
