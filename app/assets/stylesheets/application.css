@@ -66,12 +66,15 @@ margin-top:0;
 /* *************************  Menu  *********************************** */
 
 #nav_wrapper{
+background-color: #1F1F1F;
 float:left;
 width:85%;
 margin-left:7.5%;
 border-top: 1px solid #5075D5;
 border-bottom: 1px solid #5075D5;
 }
+
+.sticky {position:fixed; top:0;}
 
 #nav li
 {
@@ -110,12 +113,18 @@ a:active {
     text-decoration: none;
 }
 
+.current{
+color:white !important;
+}
+
+
+
 
 /* *************************  Partials  *********************************** */
 
 .partial{
 display: block;
-margin-left:15%;
+margin-left:0;
 padding: 5%;
 padding-top: 10%;
 padding-bottom: 20%;
@@ -123,31 +132,127 @@ padding-bottom: 20%;
 
 
 .title{
-color:#5075D5;
-font-size: 3vw;
+color:white;
+font-size: 3.5vw;
+margin-left: 38%;
+margin-right: 35%;
+top: 0;
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
 
 .info{
+padding-top:0;
 color:white;
-margin-left: 2%;
-font-size: 2vw;
+margin-left: 5%;
+font-size: 2.5vw;
+width: 40%;
+line-height: 200%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
+
+#arrow{
+width: 6%;
+float: right;
+margin-right: 0;
+margin-top: 2%;
+}
+
+#arrow:hover{
+background-color: #383838;
+border: 1px solid #383838;
+border-radius: 5px;
+}
+
+#arrow_left{
+width: 6%;
+float: right;
+margin-right: 2%;
+margin-top: 2%;
+}
+
+#arrow_left:hover{
+background-color: #383838;
+border: 1px solid #383838;
+border-radius: 5px;
+}
+
+/* *********  Partial 1 ************** */
+
+#developers{
+font-size: 3vw;
+color: green;
+font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#designers{
+font-size: 4vw;
+color: yellow;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#entrepreneurs{
+color: #CC3333;
+font-size: 4vw;
+font-weight: 700;
+font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+#Rails{
+width: 8%;
+float: right;
+margin-top: -30%;
+margin-right: 25%;
+}
+
+#MySQL{
+width: 10%;
+float: right;
+margin-top: -30%;
+margin-right: 9%;
+}
+
+
+#JQuery{
+width: 8%;
+float: right;
+margin-top: -13%;
+margin-right: 30%;
+}
+
+
+#HMTL{
+width: 9%;
+float: right;
+margin-top: -13%;
+margin-right: 17%;
+}
+
+
+#css3{
+width: 6%;
+float: right;
+margin-top: -13%;
+margin-right: 5%;
+}
+
+#image_wrapper{
+margin-right: 7%;
+margin-top: -3%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{ 
+    #image_wrapper{
+	margin-right: 7%;
+	margin-top: -4%;
+	}
+
+	.info{
+	width: 45%;
+	}
+}
+
+
 
 /* **************************  Media Quieries ****************************** */
 
-@media only screen 
-and (max-width : 1000px){
-	img{
-		width:100%;
-		margin-left: 0;
-		margin-right: 0;
-	}
-}
-
-@media handheld{
-	img{
-		width:100%;
-		margin-left: 0;
-		margin-right: 0;
-	}
-}
