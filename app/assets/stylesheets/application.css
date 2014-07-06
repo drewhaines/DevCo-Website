@@ -150,6 +150,16 @@ line-height: 200%;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
+.info_2{
+padding-top:0;
+color:#6DB863;
+margin-left: 5%;
+font-size: 2.5vw;
+width: 60%;
+line-height: 150%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
 #arrow{
 width: 6%;
 float: right;
@@ -238,6 +248,29 @@ margin-right: 5%;
 #image_wrapper{
 margin-right: 7%;
 margin-top: -3%;
+}
+
+#first_step{
+font-weight:700;
+font-size: 3.7vw;
+color:white;
+}
+
+#text_wrapper{
+margin-left: 40%;
+padding-top:2%;
+color:white;
+font-size: 2.5vw;
+width: 70%;
+line-height: 120%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+#rotate_arrow{
+width: 15%;
+float: left;
+margin-left: 15%;
+margin-top: 0;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0)
