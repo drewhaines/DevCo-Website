@@ -178,6 +178,7 @@ width: 6%;
 float: right;
 margin-right: 2%;
 margin-top: 2%;
+display:none;
 }
 
 #arrow_left:hover{
@@ -186,7 +187,17 @@ border: 1px solid #383838;
 border-radius: 5px;
 }
 
-/* *********  Partial 1 ************** */
+/* **********************************************  Partial 1 ********************************************* */
+
+
+/* ***  Hidden Slides *** */
+#slide_2, #slide_3{
+display: none;
+}
+
+
+
+/* **************************   Slide 1   ***************************/
 
 #developers{
 font-size: 3vw;
@@ -250,6 +261,8 @@ margin-right: 7%;
 margin-top: -3%;
 }
 
+/* **************************   Slide 2   ***************************/
+
 #first_step{
 font-weight:700;
 font-size: 3.7vw;
@@ -261,7 +274,7 @@ margin-left: 40%;
 padding-top:2%;
 color:white;
 font-size: 2.5vw;
-width: 70%;
+width: 65%;
 line-height: 120%;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
@@ -271,6 +284,12 @@ width: 15%;
 float: left;
 margin-left: 15%;
 margin-top: 0;
+}
+
+#dev_and_design{
+font-weight:700;
+font-size: 3.7vw;
+color:white;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0)
@@ -287,5 +306,5 @@ margin-top: 0;
 
 
 
-/* **************************  Media Quieries ****************************** */
+/* ***************************************  Media Quieries *************************************** */
 

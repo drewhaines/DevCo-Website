@@ -20,6 +20,8 @@ $(document).ready(function(){
 var menu = document.querySelector('#nav_wrapper');
 var origOffsetY = menu.offsetTop;
 
+
+
 function scroll () {
   if ($(window).scrollTop() >= origOffsetY) {
     $('#nav_wrapper').addClass('sticky');
@@ -35,6 +37,8 @@ $('.menu_title').click(function() {
 	$('.menu_title').removeClass('current');
     $(this).toggleClass('current');
 });
+
+
 
 
 });
