@@ -191,7 +191,7 @@ border-radius: 5px;
 
 
 /* ***  Hidden Slides *** */
-#slide_2, #slide_3{
+#slide_2, #slide_3, #slide_4, #slide_5{
 display: none;
 }
 
@@ -306,7 +306,7 @@ margin-left: 50%;
 padding-top:8.2%;
 color:white;
 font-size: 2.5vw;
-width: 40%;
+width: 47%;
 line-height: 120%;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
@@ -343,6 +343,78 @@ font-size: 2.5vw;
 width: 70%;
 line-height: 150%;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+/* **************************   Slide 4   ***************************/
+
+
+#deployment{
+font-size: 2vw;
+color: white;
+line-height: 50% !important;
+}
+
+
+.info_4{
+padding-top:5%;
+margin-bottom:0;
+margin-top:0;
+color:white;
+margin-left: 10%;
+font-size: 1.8vw;
+width: 48%;
+line-height: 150%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.info_5{
+padding-top:1%;
+margin-bottom:0;
+margin-top:0;
+color:white;
+margin-left: 5%;
+font-size: 1.8vw;
+width: 60%;
+line-height: 150%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+#project{
+font-weight:700;
+font-size: 3.7vw;
+color:white;
+}
+
+#done{
+font-weight:500;
+color:#6DB858;
+font-size: 2.3vw;
+}
+
+#handshake{
+float: right;
+width: 18%;
+margin-top: 10%;
+margin-right: 5%;
+}
+
+#middle_info{
+margin-left:16%;
+padding-top:3%;
+}
+
+#last_info{
+padding-top:3%;
+}
+
+#lasting_relationships{
+color: orange;
+
+}
+
+#wont{
+color: red;
+font-size: 2.3vw;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0)

@@ -6,8 +6,8 @@ $(document).ready(function(){
 	$('#arrow').click(function() {
 		slide_number = slide_number+1;
 		
-		if(slide_number>=3){
-		slide_number=3;
+		if(slide_number>=4){
+		slide_number=4;
 		$('#arrow').hide();
 		}
 		
@@ -18,6 +18,7 @@ $(document).ready(function(){
 		$('#slide_1').hide();
 		$('#slide_2').hide();
 		$('#slide_3').hide();
+		$('#slide_4').hide();
 		$(current_slide).show();
 	});
 
@@ -37,6 +38,7 @@ $(document).ready(function(){
 		$('#slide_1').hide();
 		$('#slide_2').hide();
 		$('#slide_3').hide();
+		$('#slide_4').hide();
 		$(current_slide).show();
 	});
 
