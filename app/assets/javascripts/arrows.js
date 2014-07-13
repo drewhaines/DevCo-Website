@@ -1,44 +1,44 @@
 $(document).ready(function(){
 
 	var slide_number = 1;
-	var current_slide = "#slide_1";
+	var current_slide = ".slide_1";
 
-	$('#arrow').click(function() {
+	$('.arrow').click(function() {
 		slide_number = slide_number+1;
 		
 		if(slide_number>=4){
 		slide_number=4;
-		$('#arrow').hide();
+		$('.arrow').hide();
 		}
 		
-		$('#arrow_left').show();
+		$('.arrow_left').show();
 		
-		current_slide = "#slide_"+slide_number;
+		current_slide = ".slide_"+slide_number;
 		
-		$('#slide_1').hide();
-		$('#slide_2').hide();
-		$('#slide_3').hide();
-		$('#slide_4').hide();
+		$('.slide_1').hide();
+		$('.slide_2').hide();
+		$('.slide_3').hide();
+		$('.slide_4').hide();
 		$(current_slide).show();
 	});
 
 
-	$('#arrow_left').click(function() {
+	$('.arrow_left').click(function() {
 		slide_number = slide_number-1;
 		
 		if(slide_number<=1){
 		slide_number=1;
-		$('#arrow_left').hide();
+		$('.arrow_left').hide();
 		}
 		
-		$('#arrow').show();
+		$('.arrow').show();
 		
-		current_slide = "#slide_"+slide_number;
+		current_slide = ".slide_"+slide_number;
 		
-		$('#slide_1').hide();
-		$('#slide_2').hide();
-		$('#slide_3').hide();
-		$('#slide_4').hide();
+		$('.slide_1').hide();
+		$('.slide_2').hide();
+		$('.slide_3').hide();
+		$('.slide_4').hide();
 		$(current_slide).show();
 	});
 
