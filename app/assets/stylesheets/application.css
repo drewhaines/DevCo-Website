@@ -435,6 +435,35 @@ color: red;
 font-size: 2.3vw;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{ 
+	.info_4{
+	padding-top:3%;
+	margin-bottom:0;
+	margin-top:0;
+	color:white;
+	margin-left: 10%;
+	font-size: 1.8vw;
+	width: 48%;
+	line-height: 150%;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	}
+	
+	.info_5{
+	padding-top:0;
+	margin-bottom:0;
+	margin-top:0;
+	color:white;
+	margin-left: 5%;
+	font-size: 1.8vw;
+	width: 60%;
+	line-height: 150%;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	}
+
+
+}
+
 /* **********************************************  HOW WE WORK ********************************************* */
 
 
