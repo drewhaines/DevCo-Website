@@ -546,10 +546,11 @@ border: 1px solid #383838;
 border-radius: 5px;
 }
 
-#cost{
+#how_we_work_title{
 font-weight:700;
 font-size: 4vw;
-color:#4CA35A;
+color:white;
+text-decoration: underline;
 }
 
 #hourly{
@@ -578,7 +579,20 @@ color:#3451E8;
 }
 
 
+/* **************************   Slide 2   ***************************/
 
+.info_9{
+color:white;
+margin-left: 20%;
+font-size: 1.8vw;
+width: 60%;
+line-height: 150%;
+float:none;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+margin-bottom:0;
+vertical-align:top;
+text-align:center;
+}
 
 
 

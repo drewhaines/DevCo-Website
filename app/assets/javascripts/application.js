@@ -15,15 +15,17 @@
 //= require turbolinks
 //= require_tree .
 
+var slide_number = 1;
+var number_of_slides = 4;
+var current_slide = ".slide_1";
+
+
 $(document).ready(function(){
   
 	var menu = document.querySelector('#nav_wrapper');
 	var origOffsetY = menu.offsetTop;
+	var current_menu=1;
 
-
-	var number_of_slides = 4;
-	var slide_number =1;
-	var current_slide = ".slide_1";
 	var partial_1 = document.querySelector('#what_we_do');
 	var partial_2 = document.querySelector('#how_we_work');
 	var partial_3 = document.querySelector('#about_us');
@@ -43,8 +45,6 @@ function scroll () {
   }
   
 
-	
-
 		
 	/* ***********   Partial 1 Logic   ************/
 		  slide_number = 1;
@@ -54,9 +54,11 @@ function scroll () {
 			$('.menu_title').removeClass('current');
 			$('#menu_1').addClass('current');
 					
-/* 					number_of_slides = 4;
+ 					number_of_slides = 4;
 					slide_number = 1;
-					
+			}
+			
+		if (($(window).scrollTop() >= (origOffsetY_partial_1+450)) && ($(window).scrollTop() <= (origOffsetY_partial_2-100))) {
 					$('.arrow_left').hide();
 					$('.arrow').show();
 					
@@ -65,7 +67,7 @@ function scroll () {
 					$('.slide_2').hide();
 					$('.slide_3').hide();
 					$('.slide_4').hide();
-					$('.slide_1').show(); */
+					$('.slide_1').show(); 
 		  }
 		  
 		  
@@ -75,9 +77,12 @@ function scroll () {
 			$('.menu_title').removeClass('current');
 			$('#menu_2').addClass('current');
 			
-/* 					slide_number = 1;
+ 					slide_number = 1;
 					number_of_slides = 3;
-					
+					current_menu = 2;
+		  }
+		  
+		if (($(window).scrollTop() >= (origOffsetY_partial_2+450)) && ($(window).scrollTop() <= (origOffsetY_partial_3-100))) {
 					$('.arrow_left').hide();
 					$('.arrow').show();
 					
@@ -86,7 +91,7 @@ function scroll () {
 					$('.slide_2').hide();
 					$('.slide_3').hide();
 					$('.slide_4').hide();
-					$('.slide_1').show(); */
+					$('.slide_1').show(); 
 		  }
 
 		  
@@ -95,10 +100,10 @@ function scroll () {
 			
 			$('.menu_title').removeClass('current');
 			$('#menu_3').addClass('current');
-			/*
+			
 				slide_number = 1;
 				number_of_slides = 3;
-			
+		
 				
 				$('.arrow_left').hide();
 				$('.arrow').show();
@@ -108,7 +113,7 @@ function scroll () {
 				$('.slide_2').hide();
 				$('.slide_3').hide();
 				$('.slide_4').hide();
-				$('.slide_1').show(); */
+				$('.slide_1').show(); 
 		  } 
 
 		  
@@ -116,7 +121,7 @@ function scroll () {
 		  if ($(window).scrollTop() >= (origOffsetY_partial_4-200)) {
 			$('.menu_title').removeClass('current');
 			$('#menu_4').addClass('current');
-		  }
+		  } 
 }
 
 document.onscroll = scroll;

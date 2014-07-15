@@ -1,9 +1,9 @@
+
+
 $(document).ready(function(){
-	var slide_number = 1;
-	var number_of_slides = 4;
-	var current_slide = ".slide_1";
+
 	
-	$('.arrow').click(function() {
+	$('.arrow').unbind().click(function() {
 		slide_number = slide_number+1;
 		
 		if(slide_number>=number_of_slides){
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 	
 	
-	$('.arrow_left').click(function() {
+	$('.arrow_left').unbind().click(function() {
 		slide_number = slide_number-1;
 		number_of_slides=4;
 		
