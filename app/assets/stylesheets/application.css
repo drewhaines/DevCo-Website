@@ -200,12 +200,14 @@ display: none;
 /* **************************   Slide 1   ***************************/
 
 #developers{
+font-size: 3.4vw;
 font-size: 3vw;
 color: green;
 font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 #designers{
+font-size: 3.2vw;
 font-size: 4vw;
 color: yellow;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
