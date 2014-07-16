@@ -584,19 +584,41 @@ color:#3451E8;
 /* **************************   Slide 2   ***************************/
 
 .info_9{
-color:white;
+color: #F5DEB3;
 margin-left: 20%;
 font-size: 1.8vw;
 width: 60%;
-line-height: 150%;
-float:none;
-font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-margin-bottom:0;
-vertical-align:top;
-text-align:center;
+line-height: 115%;
+float: none;
+font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+vertical-align: top;
+text-align: center;
+margin-bottom: 3%;
 }
 
 
+.info_10{
+color: white;
+margin-left: 10%;
+font-size: 1.8vw;
+width: 45%;
+line-height: 115%;
+float: none;
+font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+margin-bottom: 3%;
+margin-top: 3%;
+}
+
+#info_10_wrapper{
+margin-top:5%;
+}
+
+#contract{
+float: right;
+margin-top: 7%;
+margin-right: 17%;
+width:13%;
+}
 
 
 
