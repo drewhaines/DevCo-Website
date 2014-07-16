@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevCo</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "arrows", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag "Icon.ico" %>
+</head>
+<body>
+
+<%= image_tag("DevCo.png", :id => "DevCo") %>
+<%= image_tag("Logo.png", :id => "Logo") %>
+
+<div id="nav_wrapper">
+	<ul id="nav">
+		<li><a class="menu_title" id="menu_1" href="#what_we_do">What We Do</a></li>
+		<li><a class="menu_title" id="menu_2" href="#how_we_work">How We Work</a></li>
+		<li><a class="menu_title" id="menu_3" href="#about_us">About Us</a></li>
+		<li><a class="menu_title" id="menu_4" href="#contact">Contact</a></li>
+	</ul>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

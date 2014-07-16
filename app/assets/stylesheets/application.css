@@ -1,0 +1,606 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ 
+/* *************************  Front Page  *********************************** */
+
+
+body{
+background-color:#1F1F1F;
+}
+ 
+#DevCo{
+display:inline;
+width:20%;
+float: left;
+margin-left: 15%;
+margin-right: 35%;
+}
+
+#Logo{
+display: inline;
+width:8%;
+float: right;
+margin-right:15%;
+margin-left: 0;
+padding-top:1%;
+padding-bottom: 2%;
+}
+
+#fair{
+color: white;
+font-size:8vw;
+margin-left: 25%;
+}
+
+#reliable{
+color: white;
+font-size:8vw;
+margin-left: 32%;
+}
+
+#smart{
+color: white;
+font-size:8vw;
+margin-left: 45%;
+}
+
+#wrapper{
+padding-top:20%;
+padding-bottom:0;
+margin-top:0;
+}
+
+
+/* *************************  Menu  *********************************** */
+
+#nav_wrapper{
+background-color: #1F1F1F;
+float:left;
+width:85%;
+margin-left:7.5%;
+border-top: 1px solid #5075D5;
+border-bottom: 1px solid #5075D5;
+}
+
+.sticky {position:fixed; top:0;}
+
+#nav li
+{
+display: inline;
+list-style-type: none;
+padding-right: 5%;
+}
+
+#nav li a
+{
+color:#5075D5;
+font-size: 3vw;
+}
+
+#nav li a:hover
+{
+color:white;
+}
+
+/* These styles make sure the
+   default underline is removed 
+   link tags  */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.current{
+color:white !important;
+}
+
+
+
+
+/* *************************  Partials  *********************************** */
+
+.partial{
+display: block;
+margin-left:0;
+padding: 5%;
+padding-top: 10%;
+padding-bottom: 20%;
+}
+
+
+.title{
+color:white;
+font-size: 3.5vw;
+margin-left: 38%;
+margin-right: 35%;
+top: 0;
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+}
+
+.info{
+padding-top:0;
+color:white;
+margin-left: 5%;
+font-size: 2.5vw;
+width: 40%;
+line-height: 200%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.info_2{
+padding-top:0;
+color:#6DB863;
+margin-left: 5%;
+font-size: 2.5vw;
+width: 60%;
+line-height: 150%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.arrow{
+width: 6%;
+float: right;
+margin-right: 0;
+margin-top: 2%;
+}
+
+.arrow:hover{
+background-color: #383838;
+border: 1px solid #383838;
+border-radius: 5px;
+}
+
+.arrow_left{
+width: 6%;
+float: right;
+margin-right: 2%;
+margin-top: 2%;
+display:none;
+}
+
+.arrow_left:hover{
+background-color: #383838;
+border: 1px solid #383838;
+border-radius: 5px;
+}
+
+/* **********************************************  WHAT WE DO ********************************************* */
+
+
+/* ***  Hidden Slides *** */
+.slide_2, .slide_3, .slide_4, .slide_5{
+display: none;
+}
+
+
+
+/* **************************   Slide 1   ***************************/
+
+#developers{
+font-size: 3.4vw;
+color: green;
+font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#designers{
+font-size: 3.2vw;
+color: yellow;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#entrepreneurs{
+color: #CC3333;
+font-size: 4vw;
+font-weight: 700;
+font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+#Rails{
+width: 8%;
+float: right;
+margin-top: -30%;
+margin-right: 25%;
+}
+
+#MySQL{
+width: 10%;
+float: right;
+margin-top: -30%;
+margin-right: 9%;
+}
+
+
+#JQuery{
+width: 8%;
+float: right;
+margin-top: -13%;
+margin-right: 30%;
+}
+
+
+#HMTL{
+width: 9%;
+float: right;
+margin-top: -13%;
+margin-right: 17%;
+}
+
+
+#css3{
+width: 6%;
+float: right;
+margin-top: -13%;
+margin-right: 5%;
+}
+
+#image_wrapper{
+margin-right: 7%;
+margin-top: -3%;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{ 
+    #image_wrapper{
+	margin-right: 7%;
+	margin-top: -4%;
+	}
+
+	.info{
+	width: 45%;
+	}
+}
+
+/* **************************   Slide 2   ***************************/
+
+#first_step{
+font-weight:700;
+font-size: 3.7vw;
+color:white;
+}
+
+#text_wrapper{
+margin-left: 40%;
+padding-top:2%;
+color:white;
+font-size: 2.5vw;
+width: 65%;
+line-height: 120%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+#rotate_arrow{
+width: 15%;
+float: left;
+margin-left: 15%;
+margin-top: 0;
+}
+
+
+
+
+
+/* **************************   Slide 3   ***************************/
+
+
+#agile{
+width: 30%;
+float: left;
+margin-left: 10%;
+padding-top:2%;
+
+}
+
+#list{
+margin-left: 50%;
+padding-top:8.2%;
+color:white;
+font-size: 2.5vw;
+width: 47%;
+line-height: 120%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+#we_believe{
+margin-left: 10%;
+}
+
+#agile_dev{
+font-weight:700;
+font-size: 3.7vw;
+color:white;
+}
+
+#agile_link{
+color:#7BBDF9;
+}
+
+#agile_link:link {
+    text-decoration: underline;
+}
+
+#agile_link:hover{
+color:#B039D3;
+}
+
+.info_3{
+padding-top:1%;
+margin-bottom:0;
+margin-top:0;
+color:#6DB863;
+margin-left: 5%;
+font-size: 2.5vw;
+width: 70%;
+line-height: 150%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+/* **************************   Slide 4   ***************************/
+
+
+#deployment{
+font-size: 2vw;
+color: white;
+line-height: 50% !important;
+}
+
+
+.info_4{
+padding-top:5%;
+margin-bottom:0;
+margin-top:0;
+color:white;
+margin-left: 10%;
+font-size: 1.8vw;
+width: 48%;
+line-height: 150%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.info_5{
+padding-top:1%;
+margin-bottom:0;
+margin-top:0;
+color:white;
+margin-left: 5%;
+font-size: 1.8vw;
+width: 60%;
+line-height: 150%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+#project{
+font-weight:700;
+font-size: 3.7vw;
+color:white;
+}
+
+#done_title{
+font-weight:500;
+color:#6DB858;
+font-size: 3.7vw;
+}
+
+#handshake{
+float: right;
+width: 18%;
+margin-top: 10%;
+margin-right: 5%;
+}
+
+#middle_info{
+margin-left:16%;
+padding-top:3%;
+}
+
+#last_info{
+padding-top:3%;
+}
+
+#done{
+font-weight:500;
+color:#6DB858;
+font-size: 2.3vw;
+}
+
+#lasting_relationships{
+color: orange;
+}
+
+#wont{
+color: red;
+font-size: 2.3vw;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{ 
+	.info_4{
+	padding-top:3%;
+	margin-bottom:0;
+	margin-top:0;
+	color:white;
+	margin-left: 10%;
+	font-size: 1.8vw;
+	width: 48%;
+	line-height: 150%;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	}
+	
+	.info_5{
+	padding-top:0;
+	margin-bottom:0;
+	margin-top:0;
+	color:white;
+	margin-left: 5%;
+	font-size: 1.8vw;
+	width: 60%;
+	line-height: 150%;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	}
+
+
+}
+
+/* **********************************************  HOW WE WORK ********************************************* */
+
+
+
+/* **************************   Slide 1   ***************************/
+
+.info_6{
+padding-top:2%;
+padding-left:4%;
+padding-bottom:4%;
+padding-right:4%;
+color:white;
+margin-left: 8%;
+font-size: 1.6vw;
+width: 40%;
+line-height: 150%;
+float:none;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+vertical-align:top;
+}
+
+.info_7{
+padding:0;
+color:white;
+margin-left: 5%;
+margin-top: 1%;
+font-size: 3.4vw;
+width: 80%;
+line-height: 150%;
+float:none;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+margin-bottom:0;
+}
+
+.info_8{
+padding-top:0;
+padding-left:4%;
+padding-bottom:4%;
+padding-right:4%;
+color:white;
+margin-left: 8%;
+font-size: 1.6vw;
+width: 40%;
+line-height: 150%;
+float:none;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+margin-bottom:0;
+vertical-align:top;
+}
+
+table{
+width: 90%;
+margin-left: 5%;
+}
+
+#arrow_1{
+width: 6%;
+float: right;
+margin-right: 0;
+margin-top:-5.6%;
+}
+
+#arrow_1:hover{
+background-color: #383838;
+border: 1px solid #383838;
+border-radius: 5px;
+}
+
+#arrow_left_1{
+width: 6%;
+float: right;
+margin-right: 2%;
+margin-top: -5.6%;
+display:none;
+}
+
+#arrow_left_1:hover{
+background-color: #383838;
+border: 1px solid #383838;
+border-radius: 5px;
+}
+
+#how_we_work_title{
+font-weight:700;
+font-size: 4vw;
+color:white;
+text-decoration: underline;
+}
+
+#hourly{
+font-weight:500;
+color:yellow;
+}
+
+#it_depends{
+font-weight:500;
+color:orange;
+}
+
+#do_not{
+font-weight:500;
+color:red;
+}
+
+#estimate{
+font-weight:500;
+color:red;
+}
+
+#price{
+font-weight:500;
+color:#3451E8;
+}
+
+
+/* **************************   Slide 2   ***************************/
+
+.info_9{
+color:white;
+margin-left: 20%;
+font-size: 1.8vw;
+width: 60%;
+line-height: 150%;
+float:none;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+margin-bottom:0;
+vertical-align:top;
+text-align:center;
+}
+
+
+
+
+
+
+
+
+
+/* ***************************************  Media Quieries *************************************** */
+
