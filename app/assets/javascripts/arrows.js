@@ -27,7 +27,6 @@ $(document).ready(function(){
 	
 	$('.arrow_left').unbind().click(function() {
 		slide_number = slide_number-1;
-		number_of_slides=4;
 		
 		
 		if(slide_number<=1){
