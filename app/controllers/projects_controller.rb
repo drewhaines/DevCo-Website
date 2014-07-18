@@ -1,10 +1,10 @@
-class WebsiteController < ApplicationController
+class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
 
   # GET /projects
   # GET /projects.json
   def index
-    @project = Project.new
+    @projects = Project.all
   end
 
   # GET /projects/1
@@ -28,7 +28,7 @@ class WebsiteController < ApplicationController
 
     respond_to do |format|
       if @project.save
-        format.html { redirect_to "/", notice: 'Project was successfully created.' }
+        format.html { redirect_to "/#contact", notice: "Your project was submitted successfully.  Confirmation emails have been sent to both you and DevCo.   We'll review it and get back to you in 24hr." }
         format.json { render action: 'show', status: :created, location: @project }
       else
         format.html { render action: 'new' }

@@ -1,4 +1,6 @@
 DevCo::Application.routes.draw do
+  resources :projects
+
   get "website/index"
   
   root :to => 'website#index', :as => 'website'

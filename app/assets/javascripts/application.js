@@ -36,7 +36,7 @@ $(document).ready(function(){
 	var origOffsetY_partial_3 = partial_3.offsetTop;
 	var origOffsetY_partial_4 = partial_4.offsetTop;
 
-
+	
 function scroll () {
   if ($(window).scrollTop() >= origOffsetY) {
     $('#nav_wrapper').addClass('sticky');
@@ -124,6 +124,7 @@ function scroll () {
 		  } 
 }
 
+scroll();
 document.onscroll = scroll;
 
 
