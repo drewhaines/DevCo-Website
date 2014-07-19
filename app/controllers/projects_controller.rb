@@ -31,7 +31,11 @@ class ProjectsController < ApplicationController
         format.html { redirect_to "/#contact", notice: "Your project was submitted successfully.  Confirmation emails have been sent to both you and DevCo.   We'll review it and get back to you in 24hr." }
         format.json { render action: 'show', status: :created, location: @project }
       else
-        format.html { render action: 'new' }
+		errors=" "
+		@project.errors.full_messages.each do |msg|
+			errors << msg+".             "
+		end
+        format.html { redirect_to "/#contact", notice: errors}
         format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
