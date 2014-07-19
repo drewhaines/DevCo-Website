@@ -700,3 +700,101 @@ font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida San
 
 /* ***************************************  Media Quieries *************************************** */
 
+
+
+
+
+
+/* **********************************************  Contact ********************************************* */
+
+
+.field_1{
+display:inline-block;
+width:25%;
+color:white;
+font-size:1.5vw;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+padding-right: 3%;
+padding-bottom: 5%;
+}
+
+.field_2{
+float:left;
+width:82%;
+color:white;
+font-size:1.5vw;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+text-align:center;
+padding-bottom: 7%;
+}
+
+.field_3{
+width:29%;
+color:white;
+font-size:1.5vw;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+text-align:center;
+padding-bottom:4%;
+}
+
+.actions{
+width: 30%;
+margin-left: 26%;
+}
+
+.field_labels{
+float: left;
+padding-bottom: 1%;
+}
+
+#submit_buttom{
+border: 2px solid #5075D5;
+color:white;
+background-color:#5075D5;
+font-size:2vw;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.fields_show{
+color:white;
+margin-top:5%;
+font-size:1.5vw;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+#link{
+color:yellow;
+font-size:1.5vw;
+padding:2%;
+}
+
+#form_wrapper{
+margin-top:4%;
+margin-left: 15%;
+width:85%;
+}
+
+input{
+width: 100%;
+line-height:50px;
+font-size:1.2vw;
+}
+
+textarea{
+width: 100%;
+line-height:50px;
+font-size:1.2vw;
+}
+
+#notice{
+padding-top:0;
+color:white;
+margin-top: -2%;
+margin-left: 20%;
+font-size: 1.6vw;
+width: 60%;
+text-align:center;
+line-height: 150%;
+font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+

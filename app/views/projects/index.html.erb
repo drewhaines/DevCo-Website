@@ -1,0 +1,33 @@
+<br>
+
+<table id="projects_table">
+  <thead>
+    <tr class="fields_show">
+      <th>Full name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+        <td class="field_3"><%= project.full_name %></td>
+        <td class="field_3"><%= project.email %></td>
+        <td class="field_3"><%= project.phone %></td>
+        <td class="field_3"><%= project.description %></td>
+        <td><%= link_to 'Show', project, :id=>"link" %></td>
+        <td><%= link_to 'Edit', edit_project_path(project), :id=>"link" %></td>
+        <td><%= link_to 'Destroy', project, :id=>"link", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project', new_project_path, :id=>"link" %>
