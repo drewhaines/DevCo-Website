@@ -102,8 +102,10 @@ function scroll () {
 			$('#menu_3').addClass('current');
 			
 				slide_number = 1;
-				number_of_slides = 3;
-		
+				number_of_slides = 2;
+			}
+			
+			if (($(window).scrollTop() >= (origOffsetY_partial_3+450)) && ($(window).scrollTop() <= (origOffsetY_partial_4-100))) {
 				
 				$('.arrow_left').hide();
 				$('.arrow').show();
