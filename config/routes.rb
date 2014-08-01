@@ -2,6 +2,10 @@ DevCo::Application.routes.draw do
   resources :projects
 
   get "website/index"
+  post 'website/form' => 'website#form'
+  get 'contact' => 'website#form'
+  post 'contact' => 'website#form'
+  
   
   root :to => 'website#index', :as => 'website'
   # The priority is based upon order of creation: first created -> highest priority.

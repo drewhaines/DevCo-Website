@@ -1,4 +1,4 @@
-<%= form_for(@project) do |f| %>
+<%= form_for(@project, :html=> {:multipart => true}) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -25,9 +25,9 @@
   </div>
   <div class="field_2">
     <%= f.label :description, :class=>"field_labels" %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :rows => 5 %>
   </div>
   <div class="actions">
-    <%= f.submit "Let's Talk", :id=>"submit_buttom" %>
+    <%= f.submit "Submit", :id=>"submit_buttom" %>
   </div>
 <% end %>

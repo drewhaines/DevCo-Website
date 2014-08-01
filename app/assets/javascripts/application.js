@@ -36,12 +36,21 @@ $(document).ready(function(){
 	var origOffsetY_partial_3 = partial_3.offsetTop;
 	var origOffsetY_partial_4 = partial_4.offsetTop;
 
+	if (origOffsetY == 0){
+	origOffsetY = 154;
+	}
 	
 function scroll () {
+
+
   if ($(window).scrollTop() >= origOffsetY) {
     $('#nav_wrapper').addClass('sticky');
+	$('#Logo_2').show();
   } else {
     $('#nav_wrapper').removeClass('sticky');
+	$('#Logo_2').hide();
+	$('.menu_title').removeClass('current');
+	
   }
   
 
@@ -49,18 +58,23 @@ function scroll () {
 	/* ***********   Partial 1 Logic   ************/
 		  slide_number = 1;
 		  
-		  if ($(window).scrollTop() >= (origOffsetY_partial_1-200)) {
+		  if ($(window).scrollTop() >= (origOffsetY_partial_1-400) && ($(window).scrollTop() <= (origOffsetY_partial_2-100))) {
 		  
 			$('.menu_title').removeClass('current');
 			$('#menu_1').addClass('current');
 					
  					number_of_slides = 4;
 					slide_number = 1;
+					$('#arrow_left_1').hide();
+					
 			}
 			
-		if (($(window).scrollTop() >= (origOffsetY_partial_1+450)) && ($(window).scrollTop() <= (origOffsetY_partial_2-100))) {
-					$('.arrow_left').hide();
+		
+			 
+		if (($(window).scrollTop() >= (origOffsetY_partial_1+500)) && ($(window).scrollTop() <= (origOffsetY_partial_2-100))) {
+					$('.arrow_left').hide(); 
 					$('.arrow').show();
+					
 					
 					
 					$('.slide_1').hide();
@@ -72,7 +86,7 @@ function scroll () {
 		  
 		  
 	/* ***********   Partial 2 Logic   ************/
-		  if ($(window).scrollTop() >= (origOffsetY_partial_2-200)) {
+		  if ($(window).scrollTop() >= (origOffsetY_partial_2-400) && ($(window).scrollTop() <= (origOffsetY_partial_3-100))) {
 		  
 			$('.menu_title').removeClass('current');
 			$('#menu_2').addClass('current');
@@ -80,11 +94,15 @@ function scroll () {
  					slide_number = 1;
 					number_of_slides = 3;
 					current_menu = 2;
+					$('#arrow_left_2').hide();
+
+					
 		  }
 		  
-		if (($(window).scrollTop() >= (origOffsetY_partial_2+450)) && ($(window).scrollTop() <= (origOffsetY_partial_3-100))) {
+		if (($(window).scrollTop() >= (origOffsetY_partial_2+500)) && ($(window).scrollTop() <= (origOffsetY_partial_3-100))) {
 					$('.arrow_left').hide();
 					$('.arrow').show();
+					
 					
 					
 					$('.slide_1').hide();
@@ -96,16 +114,17 @@ function scroll () {
 
 		  
 		/* ***********   Partial 3 Logic   ************/
-		  if ($(window).scrollTop() >= (origOffsetY_partial_3-200)) {
+		  if ($(window).scrollTop() >= (origOffsetY_partial_3-400) && ($(window).scrollTop() <= (origOffsetY_partial_4-100))) {
 			
 			$('.menu_title').removeClass('current');
 			$('#menu_3').addClass('current');
 			
 				slide_number = 1;
 				number_of_slides = 2;
+
 			}
-			
-			if (($(window).scrollTop() >= (origOffsetY_partial_3+450)) && ($(window).scrollTop() <= (origOffsetY_partial_4-100))) {
+
+			if (($(window).scrollTop() >= (origOffsetY_partial_3+500)) && ($(window).scrollTop() <= (origOffsetY_partial_4-100))) {
 				
 				$('.arrow_left').hide();
 				$('.arrow').show();
@@ -120,7 +139,7 @@ function scroll () {
 
 		  
 		/* ***********   Partial 4 Logic   ************/
-		  if ($(window).scrollTop() >= (origOffsetY_partial_4-200)) {
+		  if ($(window).scrollTop() >= (origOffsetY_partial_4-250)) {
 			$('.menu_title').removeClass('current');
 			$('#menu_4').addClass('current');
 		  } 
@@ -128,8 +147,6 @@ function scroll () {
 
 scroll();
 document.onscroll = scroll;
-
-
 
 
 

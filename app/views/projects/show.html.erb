@@ -1,6 +1,7 @@
 <div id="form_field">
 	<p id="notice"><%= notice %></p>
-
+	
+	<%= image_tag @project.file.url %>
 	<p class="fields_show">
 	  <strong>Full name:</strong>
 	  <%= @project.full_name %>

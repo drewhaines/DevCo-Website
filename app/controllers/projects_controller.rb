@@ -28,14 +28,17 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project.save
-        format.html { redirect_to "/#contact", notice: "Your project was submitted successfully.  Confirmation emails have been sent to both you and DevCo.   We'll review it and get back to you in 24hr." }
+		Notifier.project_recieved(@project).deliver
+		Notifier.project_info_Drew(@project).deliver
+		Notifier.project_info_Matt(@project).deliver
+        format.html { redirect_to "/contact/", notice: "Your project was submitted successfully.  Confirmation emails have been sent to both you and DevCo.   We'll review it and get back to you in 24hr." }
         format.json { render action: 'show', status: :created, location: @project }
       else
 		errors=" "
 		@project.errors.full_messages.each do |msg|
 			errors << msg+".             "
 		end
-        format.html { redirect_to "/#contact", notice: errors}
+        format.html { redirect_to "/contact/", notice: errors}
         format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end

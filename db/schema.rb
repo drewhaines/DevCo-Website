@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140717204202) do
+ActiveRecord::Schema.define(version: 20140721161028) do
 
   create_table "projects", force: true do |t|
     t.string   "full_name"
@@ -20,6 +20,10 @@ ActiveRecord::Schema.define(version: 20140717204202) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
   end
 
 end

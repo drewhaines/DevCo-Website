@@ -3,8 +3,6 @@
 <head>
   <title>DevCo</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "arrows", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag "Icon.ico" %>
 </head>
@@ -15,10 +13,11 @@
 
 <div id="nav_wrapper">
 	<ul id="nav">
-		<li><a class="menu_title" id="menu_1" href="#what_we_do">What We Do</a></li>
-		<li><a class="menu_title" id="menu_2" href="#how_we_work">How We Work</a></li>
-		<li><a class="menu_title" id="menu_3" href="#about_us">About Us</a></li>
-		<li><a class="menu_title" id="menu_4" href="#contact">Contact</a></li>
+		<li><a class="menu_title" id="menu_1" href="http://localhost:3000#what_we_do">What We Do</a></li>
+		<li><a class="menu_title" id="menu_2" href="http://localhost:3000#how_we_work">How We Work</a></li>
+		<li><a class="menu_title" id="menu_3" href="http://localhost:3000#about_us">About Us</a></li>
+		<li><a class="menu_title" id="menu_4" href="http://localhost:3000/contact">Contact</a></li>
+		<%= link_to image_tag("Logo.png", :id => "Logo_2"), "http://localhost:3000/" %>
 	</ul>
 </div>
 
