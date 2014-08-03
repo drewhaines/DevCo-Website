@@ -52,20 +52,7 @@ $(document).ready(function(){
 	});
 	
 	
-	$('.menu_title').click(function() {
-		slide_number = 1;
-		
-		$('.arrow_left').hide();
-		$('.arrow').show();
-		
-		current_slide = ".slide_"+slide_number;
-		
-		$('.slide_1').hide();
-		$('.slide_2').hide();
-		$('.slide_3').hide();
-		$('.slide_4').hide();
-		$(current_slide).show();
-	});
+
 	
 
 });
@@ -125,20 +112,6 @@ $(document).on('page:load', function() {
 	});
 	
 	
-	$('.menu_title').click(function() {
-		slide_number = 1;
-		
-		$('.arrow_left').hide();
-		$('.arrow').show();
-		
-		current_slide = ".slide_"+slide_number;
-		
-		$('.slide_1').hide();
-		$('.slide_2').hide();
-		$('.slide_3').hide();
-		$('.slide_4').hide();
-		$(current_slide).show();
-	});
 	
 
 });
