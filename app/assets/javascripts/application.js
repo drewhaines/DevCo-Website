@@ -83,7 +83,7 @@ function scroll () {
 			
 		
 			 
-		if (($(window).scrollTop() >= (origOffsetY_partial_1+WWD_height+150)) && ($(window).scrollTop() <= (origOffsetY_partial_1+WWD_height+250))) {
+		if (($(window).scrollTop() >= (origOffsetY_partial_1+WWD_height+100)) && ($(window).scrollTop() <= (origOffsetY_partial_1+WWD_height+250))) {
 					$('.arrow_left').hide(); 
 					$('.arrow').show();
 					
@@ -121,7 +121,7 @@ function scroll () {
 					
 		  }
 		  
-		if (($(window).scrollTop() >= (origOffsetY_partial_2+HWW_height+150)) && ($(window).scrollTop() <= (origOffsetY_partial_2+HWW_height+250))) {
+		if (($(window).scrollTop() >= (origOffsetY_partial_2+HWW_height+100)) && ($(window).scrollTop() <= (origOffsetY_partial_2+HWW_height+250))) {
 					$('.arrow_left').hide();
 					$('.arrow').show();
 					
@@ -155,7 +155,7 @@ function scroll () {
 
 			}
 
-			if (($(window).scrollTop() >= (origOffsetY_partial_3+AU_height+150)) && ($(window).scrollTop() <= (origOffsetY_partial_3+AU_height+250))) {
+			if (($(window).scrollTop() >= (origOffsetY_partial_3+AU_height+100)) && ($(window).scrollTop() <= (origOffsetY_partial_3+AU_height+250))) {
 				
 				$('.arrow_left').hide();
 				$('.arrow').show();
