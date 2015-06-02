@@ -3,10 +3,23 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-gem 'paperclip'
+# Use unicorn as the app server
+gem 'unicorn-rails'
+gem 'unicorn', '~> 4.9.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use Capistrano for deployment
+group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-unicorn'
+end
+
+gem 'mysql2'
+
+gem 'dotenv-deployment', require: 'dotenv/deployment'
+gem "dotenv-rails"
+
+gem 'paperclip'
 
 # MySQL
 #gem 'mysql'
