@@ -7,7 +7,7 @@ DevCo::Application.routes.draw do
   post 'contact' => 'website#form'
   
   
-  root :to => 'website#index', :as => 'website'
+  root 'website#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -17,7 +17,7 @@
 
 
 body{
-background-color:#1F1F1F;
+background-color:#1F1F1F !important;
 }
  
 #DevCo{
@@ -40,13 +40,10 @@ padding-bottom: 2%;
 
 #Logo_2{
 display: inline;
-width:6%;
+width:60px;
 float: right;
-margin-right:2%;
-margin-top: -.5%;
-padding-top:0;
+padding-top:6px;
 padding-bottom: 0;
-display:none;
 }
 
 #fair{
@@ -83,12 +80,23 @@ margin-top:0;
 /* *************************  Menu  *********************************** */
 
 #nav_wrapper{
-background-color: #1F1F1F;
-float:left;
-width:90%;
-margin-left:5%;
-border-top: 1px solid #5075D5;
-border-bottom: 1px solid #5075D5;
+    background-color: #1F1F1F !important;
+    float:left;
+    border-top: 1px solid #5075D5;
+    border-bottom: 1px solid #5075D5;
+    z-index: 100;
+}
+
+
+.nav_title{
+    color:#5075D5;
+    font-size: 3em;
+    line-height: 70px;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+.nav_title:hover{
+    color: white;
 }
 
 #nav{
@@ -96,25 +104,13 @@ padding-left:0;
 text-align: center;
 }
 
-.sticky {position:fixed; top:0;}
-
-#nav li
-{
-display: inline;
-list-style-type: none;
-padding-right: 5%;
+.sticky {
+    position:fixed !important;
+    top:0 !important;
 }
 
-#nav li a
-{
-color:#5075D5;
-font-size: 3vw;
-}
 
-#nav li a:hover
-{
-color:white;
-}
+
 
 /* These styles make sure the
    default underline is removed 
@@ -748,11 +744,9 @@ and (orientation : landscape){
 	
 	
 	#Logo_2{
-	width:6%;
+    width: 60px;
 	float: right;
-	padding-top:0;
-	padding-bottom: 0;
-	margin-right:9%;
+	padding-top:6px;
 	display:none;
 	vertical-align:top;
 	}
@@ -979,7 +973,7 @@ and (orientation : portrait){
 	}
 	
 	#nav_wrapper{
-	background-color: #1F1F1F;
+	background-color: #1F1F1F !important;
 	float:left;
 	width:100%;
 	margin-left:3%;
@@ -992,14 +986,15 @@ and (orientation : portrait){
 	.sticky{
 	position:fixed; top:0;
 	margin-left: 0 !important;
+
 	}
 	
 	#nav{
 	width:100%;
 	}
 	
-	#menu_3{
-	white-space: nowrap;
+	.no_wrap{
+	white-space: nowrap !important;
 	}
 	
 	#nav li a

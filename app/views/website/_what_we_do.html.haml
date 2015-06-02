@@ -1,0 +1,65 @@
+/ **********************************  Slide 1  ***************************************
+#WWD_slide_1.slide_1
+  %p.info
+    We are
+    = succeed "," do
+      %span#developers developers
+    = succeed "," do
+      %span#designers DESIGNERS
+    %span#entrepreneurs Entrepreneurs
+    who build software for multiple devices using
+    internet technologies.
+  #image_wrapper
+    = image_tag "MySQL.png", :id=>"MySQL"
+    = image_tag "JQuery.png", :id=>"JQuery"
+    = image_tag "css3.png", :id=>"css3"
+    = image_tag "HTML5.png", :id=>"HMTL"
+    = image_tag "Rails.png", :id=>"Rails"
+/ **********************************  Slide 2  ***************************************
+.slide_2
+  %p.info_2
+    %span#first_step The First Step
+    is to
+    tell us your idea. What do you need developed?
+  = image_tag "rotate-arrow.png", :id=>"rotate_arrow"
+  %p#text_wrapper
+    1. Fill out a contact form.
+    %br/
+    2. We'll review it and reply in 24 hrs.
+    %br/
+    3. Meet locally or online to discuss details.
+    %br/
+    4. START development!!!
+/ **********************************  Slide 3  ***************************************
+.slide_3
+  %p.info_3
+    %span#agile_dev
+      We believe in #{link_to "Agile Development", "http://agilemanifesto.org/principles.html", :target => "_blank", :id => "agile_link"}
+  = image_tag "agile.png", :id=>"agile"
+  %ul#list
+    %li Highly collaborative with clients
+    %li Flexible to change
+    %li Small teams = faster delivery
+    %li In-house designers
+/ **********************************  Slide 4  ***************************************
+.slide_4
+  %p.info_5
+    %span#project
+      Once your Project is
+      = succeed "..." do
+        %span#done_title "done"
+  = image_tag "handshake.png", :id=>"handshake"
+  %p.info_4
+    Software is never
+    = succeed "." do
+      %span#done "done"
+  %p#middle_info.info_4
+    We want to build
+    %span#lasting_relationships Lasting Relationships
+    with clients, and continue to work together in the future.
+  %p#last_info.info_4
+    We
+    %span#wont WON'T
+    disappear afterwords, leaving you stranded to find another developer.
+= image_tag "arrow.png", :class=>"arrow"
+= image_tag "arrow_left.png", :class=>"arrow_left"

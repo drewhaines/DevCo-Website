@@ -16,6 +16,9 @@ end
 
 gem 'mysql2'
 
+gem 'haml'
+gem 'haml-rails', '~> 0.9.0'
+
 gem 'dotenv-deployment', require: 'dotenv/deployment'
 gem "dotenv-rails"
 

@@ -14,8 +14,7 @@ DevCo::Application.configure do
 		:password => "#RSWE#FBGM" ,
 		:enable_starttls_auto => true
 	}
-	
-  Paperclip.options[:command_path] = "C:\\abc" 
+
   
   
   config.cache_classes = false

@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    %title
+      DevCo
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    = favicon_link_tag "Icon.ico"
+  %body
+    .container-fluid
+      .row
+        .col-xs-12
+          = image_tag("DevCo.png", :id => "DevCo")
+          = image_tag("Logo.png", :id => "Logo")
+
+      .row
+        .col-xs-12#nav_wrapper
+          .row
+            .col-xs-10.col-xs-offset-1.text-center
+              .row
+                .col-xs-6.col-md-3
+                  %a.nav_title.menu_title.no_wrap#menu_1{:href => root_path+"#what_we_do"} What We Do
+                .col-xs-6.col-md-3
+                  %a.nav_title.menu_title.no_wrap#menu_2{:href => root_path+"#how_we_work"} How We Work
+                .col-xs-6.col-md-3
+                  %a.nav_title.menu_title.no_wrap#menu_3{:href => root_path+"#about_us"} About Us
+                .col-xs-6.col-md-3
+                  %a.nav_title.menu_title.no_wrap#menu_4.menu_title{:href => root_path+"/contact"} Contact
+            .col-xs-1
+              = link_to image_tag("Logo.png", :id => "Logo_2"), root_path
+      .row
+        .col-xs-12
+          = yield
+          -#
+          -#  %ul#nav
+          -#    %li
+          -#      %a#menu_1.menu_title{:href => root_path+"#what_we_do"} What We Do
+          -#    %li
+          -#      %a#menu_2.menu_title{:href => root_path+"#how_we_work"} How We Work
+          -#    %li
+          -#      %a#menu_3.menu_title{:href => root_path+"#about_us"} About Us
+          -#    %li
+          -#      %a#menu_4.menu_title{:href => root_path+"/contact"} Contact
+          -#    = link_to image_tag("Logo.png", :id => "Logo_2"), root_path
