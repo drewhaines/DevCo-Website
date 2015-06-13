@@ -78,8 +78,9 @@ background-color:#1F1F1F !important;
 display:inline;
 width:20%;
 float: left;
-margin-left: 15%;
+margin-left: 10%;
 margin-right: 35%;
+  padding-top: 10px;
 }
 
 #Logo{
@@ -224,8 +225,18 @@ margin-top: 30%;
 margin-bottom: 30%;
 }
 
+.partial_2{
+  display: block;
+  margin-left:0;
+  padding: 5%;
+  padding-bottom: 20%;
+  padding-top: 6%;
+  margin-top: 30%;
+  margin-bottom: 30%;
+}
+
 .partial_block{
-    height: 2000px;
+    height: 1500px;
 }
 
 .title{
@@ -674,7 +685,7 @@ color:red;
 
 #price{
 font-weight:500;
-color:#3451E8;
+color: #6ea9ff;
 }
 
 
@@ -732,22 +743,44 @@ margin-right: 0;
 margin-top:-15%;
 }
 
+.twitter_icon{
+  width: 30px;
+  height: 30px;
+}
+
+.contact_icons{
+  width: 50px;
+  height: 50px;
+}
+
+.block{
+  display: block;
+}
+
+.right_1{
+  margin-left: 20%;
+}
+
+.right_2{
+  margin-left: 30%;
+}
 
 /* **************************   Slide 1   ***************************/
 
 #page_title{
-color:#FFFFFF;
+  color: #5c91ff;
 margin-left: 3%;
-font-size: 3vw;
+font-size: 3.3vw;
 margin-top: 1%;
 text-align: center;
+  font-family: 'Pacifico', cursive;
 }
 
 #titles{
 color:#5075D5;
-margin-left: 2.5%;
-font-size: 3vw;
+font-size: 2.2vw;
   color: white;
+  font-family: 'Josefin Slab', serif;
 
 }
 
@@ -761,16 +794,17 @@ border: 4px solid white;
 #info_drew{
   position: relative;
   top: -200px;
-  color: #B9FFAF;
+  color: #fffbf9;
 margin-left: 30%;
 font-size: 1.2vw;
 width: 57%;
 line-height: 150%;
-font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-family: "Arial Black", Gadget, sans-serif;
+
 }
 
 #sdsueetutor_link{
-color:white;
+  color: #72abff;
 }
 
 
@@ -787,12 +821,12 @@ border: 4px solid white;
 #info_matt{
   position: relative;
   top: -200px;
-color: #B9FFAF !important;
+  color: #fffbf9;
 margin-left: 30%;
 font-size: 1.2vw;
 width: 57%;
 line-height: 150%;
-font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 
 
@@ -983,9 +1017,13 @@ and (orientation : landscape){
   font-size: 1.2em;
   top:.5em;
   margin-left: 10%;
-  color: white;
+  color: #5c91ff;
   position: relative;
   z-index:0;
+}
+
+.contact_links:hover{
+  color: #5c91ff;
 }
 
 @media only screen
@@ -1554,6 +1592,8 @@ margin-left: 0;
 font-size: 8vw;
 margin-top: 1%;
 text-align: center;
+  color: #5c91ff;
+
 }
 
 #titles{
@@ -1584,7 +1624,7 @@ text-align:center;
 }
 
 #sdsueetutor_link{
-color:#5081E6;
+  color: #4F76D4;
 }
 
 
