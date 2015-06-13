@@ -27,6 +27,8 @@ gem 'paperclip'
 # MySQL
 gem 'mysql'
 
+gem 'kgio', '>= 2.9.3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
