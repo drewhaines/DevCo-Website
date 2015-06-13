@@ -22,38 +22,229 @@ var current_slide = ".slide_1";
 
 $(document).ready(function(){
   
-	var menu = document.querySelector('#nav_wrapper');
-	var origOffsetY = menu.offsetTop;
-	var current_menu=1;
+    var menu = document.querySelector('#nav_wrapper');
+    var origOffsetY = menu.offsetTop;
+    var current_menu=1;
 
-	var partial_1 = document.querySelector('#what_we_do');
-	var partial_2 = document.querySelector('#how_we_work');
-	var partial_3 = document.querySelector('#about_us');
-	var partial_4 = document.querySelector('#contact');
+    var partial_1 = document.querySelector('#what_we_do');
+    var partial_2 = document.querySelector('#how_we_work');
+    var partial_3 = document.querySelector('#about_us');
+    var partial_4 = document.querySelector('#contact');
 
-	
-	var origOffsetY_partial_1 = partial_1.offsetTop;
-	var origOffsetY_partial_2 = partial_2.offsetTop;
-	var origOffsetY_partial_3 = partial_3.offsetTop;
-	var origOffsetY_partial_4 = partial_4.offsetTop;
-	
-	
-	var WWD = document.querySelector('#WWD_slide_1');
-	var HWW = document.querySelector('#HWW_slide_1');
-	var AU = document.querySelector('#AU_slide_1');
-	
-	var WWD_height = WWD.offsetHeight;
-	var HWW_height = HWW.offsetHeight;
-	var AU_height = AU.offsetHeight;
-	
 
-	if (origOffsetY == 0){
-	origOffsetY = 154;
-	}
+    var origOffsetY_partial_1 = partial_1.offsetTop;
+    var origOffsetY_partial_2 = partial_2.offsetTop;
+    var origOffsetY_partial_3 = partial_3.offsetTop;
+    var origOffsetY_partial_4 = partial_4.offsetTop;
+
+
+    var WWD = document.querySelector('#WWD_slide_1');
+    var HWW = document.querySelector('#HWW_slide_1');
+    var AU = document.querySelector('#AU_slide_1');
+
+    var WWD_height = WWD.offsetHeight;
+    var HWW_height = HWW.offsetHeight;
+    var AU_height = AU.offsetHeight;
+
+    var hash = window.location.hash.substring(1);
+
+    if (origOffsetY == 0){
+      origOffsetY = 154;
+    }
+
+    // Click the menu buttons
+
+    $('#menu_1').unbind().click(function() {
+        $('.arrow_left').hide();
+        $('.arrow').show();
+
+
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+        $('.menu_title').removeClass('current');
+        $('#menu_1').addClass('current');
+        slide_number = 1;
+        number_of_slides = 4;
+        current_menu = 1;
+
+        if(!($('#nav_wrapper').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#what_we_do').offset().top-120)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#what_we_do').offset().top-30)
+            },500);
+        }
+
+
+    });
+
+    $('#menu_2').unbind().click(function() {
+        $('.arrow_left').hide();
+        $('.arrow').show();
+
+
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+        $('.menu_title').removeClass('current');
+        $('#menu_2').addClass('current');
+        slide_number = 1;
+        number_of_slides = 3;
+        current_menu = 2;
+
+
+        if(!($('#nav_wrapper').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#how_we_work').offset().top-120)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#how_we_work').offset().top-30)
+            },500);
+        }
+
+
+    });
+
+    $('#menu_3').unbind().click(function() {
+        $('.arrow_left').hide();
+        $('.arrow').show();
+
+
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+
+        $('.menu_title').removeClass('current');
+        $('#menu_3').addClass('current');
+        slide_number = 1;
+        number_of_slides = 2;
+
+
+        if(!($('#nav_wrapper').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#about_us').offset().top-120)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#about_us').offset().top-30)
+            },500);
+        }
+
+
+    });
+
+
+    // Click the menu buttons
+
+    if (hash == "what_we_do"){
+        $('.menu_title').removeClass('current');
+        $('#menu_1').addClass('current');
+        $('.arrow_left').hide();
+        $('.arrow').show();
+
+
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+        $('.menu_title').removeClass('current');
+        $('#menu_1').addClass('current');
+        slide_number = 1;
+        number_of_slides = 4;
+        current_menu = 1;
+
+        if(!($('#nav_wrapper').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#what_we_do').offset().top-120)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#what_we_do').offset().top-30)
+            },500);
+        }
+    }
+
+    if (hash == "how_we_work"){
+        $('.menu_title').removeClass('current');
+        $('#menu_2').addClass('current');
+        $('.arrow_left').hide();
+        $('.arrow').show();
+
+
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+        $('.menu_title').removeClass('current');
+        $('#menu_2').addClass('current');
+        slide_number = 1;
+        number_of_slides = 3;
+        current_menu = 2;
+
+        if(!($('#nav_wrapper').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#how_we_work').offset().top-120)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#how_we_work').offset().top-30)
+            },500);
+        }
+
+    }
+
+    if (hash == "about_us"){
+        $('.menu_title').removeClass('current');
+        $('#menu_3').addClass('current');
+        $('.arrow_left').hide();
+        $('.arrow').show();
+
+
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+
+        $('.menu_title').removeClass('current');
+        $('#menu_3').addClass('current');
+        slide_number = 1;
+        number_of_slides = 2;
+
+        if(!($('#nav_wrapper').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#about_us').offset().top-120)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#about_us').offset().top-30)
+            },500);
+        }
+    }
+
+
+    scroll();
+    document.onscroll = scroll;
 	
 function scroll () {
-
-
   if ($(window).scrollTop() >= origOffsetY) {
     $('#nav_wrapper').addClass('sticky');
 	$('#Logo_2').show();
@@ -61,9 +252,7 @@ function scroll () {
     $('#nav_wrapper').removeClass('sticky');
 	$('#Logo_2').hide();
 	$('.menu_title').removeClass('current');
-	
   }
-  
 
 		
 	/* ***********   Partial 1 Logic   ************/
@@ -78,17 +267,12 @@ function scroll () {
  					number_of_slides = 4;
 					slide_number = 1;
 					$('#arrow_left_1').hide();
-					
 			}
-			
-		
-			 
+
 		if (($(window).scrollTop() >= (origOffsetY_partial_1+WWD_height+100)) && ($(window).scrollTop() <= (origOffsetY_partial_1+WWD_height+250))) {
 					$('.arrow_left').hide(); 
 					$('.arrow').show();
-					
-					
-					
+
 					$('.slide_1').hide();
 					$('.slide_2').hide();
 					$('.slide_3').hide();
@@ -99,14 +283,9 @@ function scroll () {
 				$('#menu_1').addClass('current');
  					number_of_slides = 4;
 					slide_number = 1;
-
 		  }
-		  
-		  
-		  
-	
-		  
-		  
+
+
 	/* ***********   Partial 2 Logic   ************/
 		  if ($(window).scrollTop() >= (origOffsetY_partial_2-HWW_height) && ($(window).scrollTop() <= (origOffsetY_partial_2))) {
 		  
@@ -117,31 +296,24 @@ function scroll () {
 					number_of_slides = 3;
 					current_menu = 2;
 					$('#arrow_left_2').hide();
-
-					
 		  }
 		  
 		if (($(window).scrollTop() >= (origOffsetY_partial_2+HWW_height+100)) && ($(window).scrollTop() <= (origOffsetY_partial_2+HWW_height+250))) {
 					$('.arrow_left').hide();
 					$('.arrow').show();
 					
-					
-					
 					$('.slide_1').hide();
 					$('.slide_2').hide();
 					$('.slide_3').hide();
 					$('.slide_4').hide();
 					$('.slide_1').show(); 
-					
-					
+
 					$('.menu_title').removeClass('current');
 					$('#menu_2').addClass('current');
  					slide_number = 1;
 					number_of_slides = 3;
 					current_menu = 2;
 		  }
-		  
-		 
 
 		  
 		/* ***********   Partial 3 Logic   ************/
@@ -152,14 +324,12 @@ function scroll () {
 			
 				slide_number = 1;
 				number_of_slides = 2;
-
 			}
 
 			if (($(window).scrollTop() >= (origOffsetY_partial_3+AU_height+100)) && ($(window).scrollTop() <= (origOffsetY_partial_3+AU_height+250))) {
 				
 				$('.arrow_left').hide();
 				$('.arrow').show();
-				
 				
 				$('.slide_1').hide();
 				$('.slide_2').hide();
@@ -172,8 +342,6 @@ function scroll () {
 				slide_number = 1;
 				number_of_slides = 2;
 		  } 
-		  
-		 
 
 		  
 		/* ***********   Partial 4 Logic   ************/
@@ -182,23 +350,5 @@ function scroll () {
 			$('#menu_4').addClass('current');
 		  } 
 }
-
-scroll();
-document.onscroll = scroll;
-	
-$('.menu_title').click(function() {
-	$('.arrow_left').hide();
-	$('.arrow').show();
-				
-			
-	$('.slide_1').hide();
-	$('.slide_2').hide();
-	$('.slide_3').hide();
-	$('.slide_4').hide();
-	$('.slide_1').show(); 
-	scroll();
-	});
-
-
 
 });

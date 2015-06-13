@@ -3,7 +3,7 @@ DevCo::Application.routes.draw do
 
   get "website/index"
   post 'website/form' => 'website#form'
-  get 'contact' => 'website#form'
+  get 'contact' => 'website#form', as: 'contact'
   post 'contact' => 'website#form'
   
   

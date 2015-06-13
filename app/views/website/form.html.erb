@@ -6,12 +6,19 @@
 
 
 <div id="wrapper">
-	<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-	<div id="form_wrapper">
+  <% unless notice %>
+    <div class="row">
+      <div class="col-xs-1 col-sm-2 col-md-3"></div>
+      <p class="form_text col-xs-10 col-sm-8 col-md-6">Right now, all we need is the basics.
+        Any real software gets built with strong communication,
+        so we'll contact you shortly!</p>
+      <div class="col-xs-1 col-sm-2 col-md-3"></div>
+    </div>
+  <% end %>
 
-		<%= render "form" %>
+  <%= render "form" %>
 
-	</div>
+
 </div>
-

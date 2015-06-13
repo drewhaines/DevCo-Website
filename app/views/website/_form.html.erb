@@ -1,33 +1,43 @@
-<%= form_for(@project, :html=> {:multipart => true}) do |f| %>
+<%= form_for(@project) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
 
       <ul>
-      <% @project.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+        <% @project.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
- <% end %>
+  <% end %>
 
-  <div class="field_1">
-    <%= f.label :full_name, :class=>"field_labels" %><br>
-    <%= f.text_field :full_name %>
+  <div class="row">
+    <div class="col-xs-1 col-sm-3 col-md-4"></div>
+    <%= f.text_field :full_name, :size => 40, placeholder: "First and Last name", class: "input col-xs-10 col-sm-6 col-md-4 text-left project_text" %>
+    <div class="col-xs-1 col-sm-3 col-md-4"></div>
   </div>
-  <div class="field_1">
-    <%= f.label :email, :class=>"field_labels" %><br>
-    <%= f.text_field :email %>
+
+  <div class="row">
+    <div class="col-xs-1 col-sm-3 col-md-4"></div>
+    <%= f.text_field :email, :size => 40, placeholder: "Email", class: "input col-xs-10 col-sm-6 col-md-4 text-left project_text" %>
+    <div class="col-xs-1 col-sm-3 col-md-4"></div>
   </div>
-  <div class="field_1">
-    <%= f.label :phone, :class=>"field_labels" %><br>
-    <%= f.text_field :phone %>
+
+  <div class="row">
+    <div class="col-xs-1 col-sm-3 col-md-4"></div>
+    <%= f.text_field :phone, :size => 40, placeholder: "Phone", class: "input col-xs-10 col-sm-6 col-md-4 text-left project_text" %>
+    <div class="col-xs-1 col-sm-3 col-md-4"></div>
   </div>
-  <div class="field_2">
-    <%= f.label :description, :class=>"field_labels" %><br>
-    <%= f.text_area :description, :rows => 5 %>
+
+  <div class="row">
+    <div class="col-xs-1 col-sm-3 col-md-4"></div>
+    <%= f.text_area :description, :size => 40, placeholder: "Short description of what you are looking to build.", class: "input col-xs-10 col-sm-6 col-md-4 text-left project_text_1" %>
+    <div class="col-xs-1 col-sm-3 col-md-4"></div>
   </div>
-  <div class="actions">
-    <%= f.submit "Submit", :id=>"submit_buttom" %>
+
+  <div class="row">
+    <div class="col-xs-2  col-sm-5"></div>
+    <%= f.submit "Submit", class: "col-xs-8 col-sm-2", id: "submit_project"%>
+    <div class="col-xs-2  col-sm-5"></div>
   </div>
 <% end %>
