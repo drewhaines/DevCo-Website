@@ -28,5 +28,3 @@
 #Ignore public assets
 /public/assets/**
 
-
-/Gemfile.lock
