@@ -25,7 +25,7 @@ gem "dotenv-rails"
 gem 'paperclip'
 
 # MySQL
-#gem 'mysql'
+gem 'mysql'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
