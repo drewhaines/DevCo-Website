@@ -19,10 +19,8 @@ module DevCo
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-	Paperclip::Attachment.default_options.merge!(
-        :url => ':s3_domain_url',
-        :path => 'app/public/:class/:attachment/:id_partition/:style/:filename'
-    )
+
+
 	
   end
 end
