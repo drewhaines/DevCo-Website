@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
-gem 'rack'
+gem 'rack', '1.5.5'
 
 # Use unicorn as the app server
 gem 'unicorn-rails'
