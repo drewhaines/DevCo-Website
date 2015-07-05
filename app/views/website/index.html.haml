@@ -1,0 +1,40 @@
+.space-6
+.visible-xs
+  .space-30
+  .space-30
+  .space-30
+#wrapper
+  .visible-xs
+    .row
+      .col-xs-11.col-xs-offset-1
+        #fair Fair.
+    .row
+      .col-xs-9.col-xs-offset-3
+        #reliable Reliable.
+    .row
+      .col-xs-7.col-xs-offset-5
+        #smart Smart.
+  .hidden-xs
+    .row
+      .col-xs-10.col-xs-offset-2
+        #fair1 Fair.
+    .row
+      .col-xs-8.col-xs-offset-4
+        #reliable1 Reliable.
+    .row
+      .col-xs-6.col-xs-offset-6
+        #smart1 Smart.
+.partial_block
+  #what_we_do.partial
+    = render "what_we_do"
+.partial_block
+  #how_we_work.partial
+    = render "how_we_work"
+.partial_block
+  #about_us.partial_2
+    = render "about_us"
+.partial_block
+  #contact.partial
+    = render "contact"
+= javascript_include_tag "application", "data-turbolinks-track" => true
+= javascript_include_tag "arrows", "data-turbolinks-track" => true
