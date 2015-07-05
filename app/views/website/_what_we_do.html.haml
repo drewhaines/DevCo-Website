@@ -1,20 +1,38 @@
 / **********************************  Slide 1  ***************************************
 #WWD_slide_1.slide_1
-  %p.info
-    We are
-    = succeed "," do
-      %span#developers developers
-    = succeed "," do
-      %span#designers DESIGNERS
-    %span#entrepreneurs Entrepreneurs
-    who build software for multiple devices using
-    internet technologies.
-  #image_wrapper
-    = image_tag "MySQL.png", :id=>"MySQL"
-    = image_tag "JQuery.png", :id=>"JQuery"
-    = image_tag "css3.png", :id=>"css3"
-    = image_tag "HTML5.png", :id=>"HMTL"
-    = image_tag "Rails.png", :id=>"Rails"
+  .row
+    .col-md-6.col-xs-12
+      %p.info
+        We are
+        = succeed "," do
+          %span#developers developers
+        = succeed ", " do
+          %span#designers DESIGNERS
+        and
+        %span#entrepreneurs Entrepreneurs
+        who build software for multiple devices using
+        internet technologies.
+    .space-30
+    .col-xs-12.col-md-6
+      .visible-xs
+        .space-30
+      .row
+        .col-xs-6.text-center
+          = image_tag "Rails.png", :id=>"Rails"
+        .col-xs-6.text-center
+          = image_tag "MySQL.png", :id=>"MySQL"
+      .space-20
+      .row
+        .col-xs-4.text-center
+          = image_tag "JQuery.png", :id=>"JQuery"
+        .col-xs-4.text-center
+          = image_tag "HTML5.png", :id=>"HMTL"
+        .col-xs-4.text-center
+          = image_tag "css3.png", :id=>"css3"
+
+
+
+
 / **********************************  Slide 2  ***************************************
 .slide_2
   %p.info_2
