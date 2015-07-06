@@ -474,7 +474,7 @@ font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida San
 
 .arrow{
 width: 6%;
-  min-width: 60px;
+  min-width: 40px;
 float: right;
 margin-right: 0;
 margin-top: 2%;
@@ -489,7 +489,7 @@ border-radius: 5px;
 .arrow_left{
   width: 6%;
   float: right;
-  min-width: 60px;
+  min-width: 40px;
   margin-right: 2%;
   margin-top: 2%;
   display:none;
@@ -533,20 +533,20 @@ font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
 }
 
 #developers-xs{
-  font-size: .8em;
+  font-size: 1em;
   color: green;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 #designers-xs{
-  font-size: 1em;
+  font-size: 1.2em;
   color: yellow;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 #entrepreneurs-xs{
   color: #CC3333;
-  font-size: .9em;
+  font-size: 1.1em;
   font-weight: 700;
   font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 }
