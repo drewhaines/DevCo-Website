@@ -18,7 +18,7 @@
           = image_tag("Logo.png", :id => "Logo")
         .col-xs-1
       .visible-xs
-        .space-6
+        .space-
       .row
         .hidden-xs
           .col-xs-12#nav_wrapper
@@ -49,5 +49,9 @@
       .row
         .col-xs-12
           = yield
-= link_to image_tag("Logo.png", :id => "Logo_2"), root_path
+.visible-xs
+  = link_to image_tag("Logo.png", :id => "Logo_2-xs"), root_path
+.hidden-xs
+  = link_to image_tag("Logo.png", :id => "Logo_2"), root_path
+
 

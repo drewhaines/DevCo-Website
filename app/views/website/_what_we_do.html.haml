@@ -30,38 +30,39 @@
           .col-xs-4.text-center
             = image_tag "css3.png", :id=>"css3"
         .space-30
-        .space-4
+        .space-30
+        .space-30
+        .space-8
   .visible-xs
-    .row
-      .col-xs-10.col-xs-offset-1
-        %p.info-xs
-          We are
-          = succeed "," do
-            %span#developers-xs developers
-          = succeed ", " do
-            %span#designers-xs DESIGNERS
-          and
-          %span#entrepreneurs-xs Entrepreneurs
-          who build software for multiple devices using
-          internet technologies.
-      .space-8
-      .col-xs-10.col-xs-offset-1
-        .space-10
-        .row
-          .col-xs-5.text-center.col-xs-offset-1
-            = image_tag "Rails.png", :id=>"Rails-xs"
-          .col-xs-5.text-center
-            = image_tag "MySQL.png", :id=>"MySQL-xs"
-        .space-10
-        .row
-          .col-xs-4.text-center
-            = image_tag "JQuery.png", :id=>"JQuery-xs"
-          .col-xs-4.text-center
-            = image_tag "HTML5.png", :id=>"HMTL-xs"
-          .col-xs-4.text-center
-            = image_tag "css3.png", :id=>"css3-xs"
-        .space-22
-
+    .slide_container
+      .row
+        .col-xs-10.col-xs-offset-1
+          %p.info-xs
+            We are
+            = succeed "," do
+              %span#developers-xs developers
+            = succeed ", " do
+              %span#designers-xs DESIGNERS
+            and
+            %span#entrepreneurs-xs Entrepreneurs
+            who build software for multiple devices using
+            internet technologies.
+        .space-8
+        .col-xs-10.col-xs-offset-1
+          .space-10
+          .row
+            .col-xs-5.text-center.col-xs-offset-1
+              = image_tag "Rails.png", :id=>"Rails-xs"
+            .col-xs-5.text-center
+              = image_tag "MySQL.png", :id=>"MySQL-xs"
+          .space-10
+          .row
+            .col-xs-4.text-center
+              = image_tag "JQuery.png", :id=>"JQuery-xs"
+            .col-xs-4.text-center
+              = image_tag "HTML5.png", :id=>"HMTL-xs"
+            .col-xs-4.text-center
+              = image_tag "css3.png", :id=>"css3-xs"
 
 
 
@@ -84,32 +85,34 @@
       %br/
       4. START development!!!
       %br
+    .space-30
+    .space-8
   .visible-xs
-    .row
-      .col-xs-12
-        %p.info_3-xs
-          %span#first_step-xs The First Step
-          %br
-          is to
-          tell us your idea.
-          What do you need developed?
-    .space-10
-    .row
-      .col-xs-6.col-xs-offset-6
-        = image_tag "rotate-arrow-xs.png", :id=>"rotate_arrow-xs"
-    .space-12
-    .row
-      .col-xs-12
-        %p#text_wrapper-xs
-          1. Fill out a contact form.
-          %br/
-          2. We'll review it and reply in 24 hrs.
-          %br/
-          3. Meet locally or online to discuss details.
-          %br/
-          4. START development!!!
-          %br
-    .space-22
+    .slide_container
+      .row
+        .col-xs-12
+          %p.info_3-xs
+            %span#first_step-xs The First Step
+            %br
+            is to
+            tell us your idea.
+            What do you need developed?
+      .space-10
+      .row
+        .col-xs-6.col-xs-offset-6
+          = image_tag "rotate-arrow-xs.png", :id=>"rotate_arrow-xs"
+      .space-12
+      .row
+        .col-xs-12
+          %p#text_wrapper-xs
+            1. Fill out a contact form.
+            %br/
+            2. We'll review it and reply in 24 hrs.
+            %br/
+            3. Meet locally or online to discuss details.
+            %br/
+            4. START development!!!
+            %br
 / **********************************  Slide 3  ***************************************
 .slide_3
   .hidden-xs
@@ -124,28 +127,28 @@
       %li In-house designers
     %br
   .visible-xs
-    .row
-      .col-xs-12
-        %p.info_4-xs
-          %span#agile_dev-xs
-            We believe in
-    .row
-      .col-xs-12
-        %p.info_4-xs
-          #{link_to "Agile Development", "http://agilemanifesto.org/principles.html", :target => "_blank", :id => "agile_link-xs"}
-    .row
-      .space-10
-      .col-xs-12.text-center
-        = image_tag "agile.png", :id=>"agile-xs"
-    .row
-      .space-14
-      .col-xs-12
-        %ul#list-xs
-          %li Highly collaborative with clients
-          %li Flexible to change
-          %li Small teams = faster delivery
-          %li In-house designers
-    .space-18
+    .slide_container
+      .row
+        .col-xs-12
+          %p.info_4-xs
+            %span#agile_dev-xs
+              We believe in
+      .row
+        .col-xs-12
+          %p.info_4-xs
+            #{link_to "Agile Development", "http://agilemanifesto.org/principles.html", :target => "_blank", :id => "agile_link-xs"}
+      .row
+        .space-10
+        .col-xs-12.text-center
+          = image_tag "agile.png", :id=>"agile-xs"
+      .row
+        .space-14
+        .col-xs-12
+          %ul#list-xs
+            %li Highly collaborative with clients
+            %li Flexible to change
+            %li Small teams = faster delivery
+            %li In-house designers
 / **********************************  Slide 4  ***************************************
 .slide_4
   .hidden-xs
@@ -168,32 +171,32 @@
       %span#wont WON'T
       disappear afterwords, leaving you stranded to find another developer.
   .visible-xs
-    .row
-      .col-xs-12
-        %p.info_5-xs
-        %span#project-xs
-          Once your Project is
-          = succeed "..." do
-            %span#done_title-xs "done"
-    .row
+    .slide_container
+      .row
+        .col-xs-12
+          %p.info_5-xs
+          %span#project-xs
+            Once your Project is
+            = succeed "..." do
+              %span#done_title-xs "done"
+      .row
+        .space-10
+        .col-xs-12.text-center
+          = image_tag "handshake.png", :id=>"handshake-xs"
       .space-10
-      .col-xs-12.text-center
-        = image_tag "handshake.png", :id=>"handshake-xs"
-    .space-10
-    .row
-      .col-xs-12
-      %p.info_44-xs
-        Software is never
-        = succeed "." do
-          %span#done-xs "done"
-      %p#middle_info.info_44-xs
-        We want to build
-        %span#lasting_relationships-xs Lasting Relationships
-        with clients, and continue to work together in the future.
-      %p#last_info.info_44-xs
-        We
-        %span#wont-xs WON'T
-        disappear afterwords, leaving you stranded to find another developer.
-    .space-2
+      .row
+        .col-xs-12
+        %p.info_44-xs
+          Software is never
+          = succeed "." do
+            %span#done-xs "done"
+        %p#middle_info.info_44-xs
+          We want to build
+          %span#lasting_relationships-xs Lasting Relationships
+          with clients, and continue to work together in the future.
+        %p#last_info.info_44-xs
+          We
+          %span#wont-xs WON'T
+          disappear afterwords, leaving you stranded to find another developer.
 = image_tag "arrow.png", :class=>"arrow"
 = image_tag "arrow_left.png", :class=>"arrow_left"

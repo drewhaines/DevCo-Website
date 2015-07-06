@@ -256,11 +256,23 @@ padding-top: 10px;
 }
 
 #Logo_2{
+  width:6em;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: .5em;
+  padding-left: .2em;
+}
+
+#Logo_2-xs{
   width:4em;
   position: fixed;
   bottom: 0;
   padding-bottom: .5em;
   padding-left: .2em;
+}
+
+.slide_container{
+  height: 380px !important;
 }
 
 #fair{

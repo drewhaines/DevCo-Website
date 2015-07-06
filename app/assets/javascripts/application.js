@@ -249,11 +249,13 @@ function scroll () {
       $('#nav_wrapper').addClass('sticky');
       $('#nav_wrapper_2').addClass('sticky');
       $('#Logo_2').show();
+      $('#Logo_2-xs').show();
   } else {
     $('#nav_wrapper').removeClass('sticky');
     $('#nav_wrapper_2').removeClass('sticky');
       $('#Logo_2').hide();
-	$('.menu_title').removeClass('current');
+      $('#Logo_2-xs').hide();
+      $('.menu_title').removeClass('current');
   }
 
 		
