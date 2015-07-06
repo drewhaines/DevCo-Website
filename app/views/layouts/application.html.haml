@@ -1,6 +1,7 @@
 !!!
 %html
   %head
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %title
       DevCo
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
@@ -16,9 +17,11 @@
         .col-xs-5
           = image_tag("Logo.png", :id => "Logo")
         .col-xs-1
+      .visible-xs
+        .space-16
       .row
-        .col-xs-12#nav_wrapper
-          .hidden-xs
+        .hidden-xs
+          .col-xs-12#nav_wrapper
             .row
               .col-xs-12.text-center
                 .row
@@ -30,7 +33,8 @@
                     %a.nav_title.menu_title.no_wrap#menu_3{:href => root_path+"#about_us"} About Us
                   .col-xs-6.col-md-3
                     %a.nav_title.menu_title.no_wrap#menu_4.menu_title{:href => contact_path} Contact
-          .visible-xs
+        .visible-xs
+          .col-xs-12#nav_wrapper_2
             .row
               .col-xs-12.text-center
                 .row

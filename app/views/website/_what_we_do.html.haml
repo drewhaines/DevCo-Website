@@ -1,34 +1,63 @@
 / **********************************  Slide 1  ***************************************
 #WWD_slide_1.slide_1
-  .row
-    .col-md-6.col-xs-12
-      %p.info
-        We are
-        = succeed "," do
-          %span#developers developers
-        = succeed ", " do
-          %span#designers DESIGNERS
-        and
-        %span#entrepreneurs Entrepreneurs
-        who build software for multiple devices using
-        internet technologies.
-    .space-30
-    .col-xs-12.col-md-6
-      .visible-xs
-        .space-30
-      .row
-        .col-xs-6.text-center
-          = image_tag "Rails.png", :id=>"Rails"
-        .col-xs-6.text-center
-          = image_tag "MySQL.png", :id=>"MySQL"
-      .space-20
-      .row
-        .col-xs-4.text-center
-          = image_tag "JQuery.png", :id=>"JQuery"
-        .col-xs-4.text-center
-          = image_tag "HTML5.png", :id=>"HMTL"
-        .col-xs-4.text-center
-          = image_tag "css3.png", :id=>"css3"
+  .hidden-xs
+    .row
+      .col-md-6
+        %p.info
+          We are
+          = succeed "," do
+            %span#developers developers
+          = succeed ", " do
+            %span#designers DESIGNERS
+          and
+          %span#entrepreneurs Entrepreneurs
+          who build software for multiple devices using
+          internet technologies.
+      .space-30
+      .col-md-5.col-md-offset-1
+        .row
+          .col-xs-6.text-center
+            = image_tag "Rails.png", :id=>"Rails"
+          .col-xs-6.text-center
+            = image_tag "MySQL.png", :id=>"MySQL"
+        .space-20
+        .row
+          .col-xs-4.text-center
+            = image_tag "JQuery.png", :id=>"JQuery"
+          .col-xs-4.text-center
+            = image_tag "HTML5.png", :id=>"HMTL"
+          .col-xs-4.text-center
+            = image_tag "css3.png", :id=>"css3"
+  .visible-xs
+    .row
+      .col-md-6.text-center
+        %p.info-xs
+          We are
+          = succeed "," do
+            %span#developers-xs developers
+          = succeed ", " do
+            %span#designers-xs DESIGNERS
+          and
+          %span#entrepreneurs-xs Entrepreneurs
+          who build software for multiple devices using
+          internet technologies.
+      .space-8
+      .col-xs-12
+        .space-10
+        .row
+          .col-xs-6.text-center
+            = image_tag "Rails.png", :id=>"Rails-xs"
+          .col-xs-6.text-center
+            = image_tag "MySQL.png", :id=>"MySQL-xs"
+        .space-20
+        .row
+          .col-xs-4.text-center
+            = image_tag "JQuery.png", :id=>"JQuery-xs"
+          .col-xs-4.text-center
+            = image_tag "HTML5.png", :id=>"HMTL-xs"
+          .col-xs-4.text-center
+            = image_tag "css3.png", :id=>"css3-xs"
+
 
 
 
@@ -81,5 +110,6 @@
     We
     %span#wont WON'T
     disappear afterwords, leaving you stranded to find another developer.
+.space-16
 = image_tag "arrow.png", :class=>"arrow"
 = image_tag "arrow_left.png", :class=>"arrow_left"

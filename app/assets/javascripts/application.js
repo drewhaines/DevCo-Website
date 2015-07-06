@@ -246,11 +246,13 @@ $(document).ready(function(){
 	
 function scroll () {
   if ($(window).scrollTop() >= origOffsetY) {
-    $('#nav_wrapper').addClass('sticky');
-	$('#Logo_2').show();
+      $('#nav_wrapper').addClass('sticky');
+      $('#nav_wrapper_2').addClass('sticky');
+      $('#Logo_2').show();
   } else {
     $('#nav_wrapper').removeClass('sticky');
-	$('#Logo_2').hide();
+    $('#nav_wrapper_2').removeClass('sticky');
+      $('#Logo_2').hide();
 	$('.menu_title').removeClass('current');
   }
 

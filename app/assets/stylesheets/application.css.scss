@@ -19,6 +19,30 @@
   white-space: nowrap !important;
   }
 
+ .blob{
+   width: 100%;
+   height: 1em !important;
+   display: block;
+ }
+
+.blob_2{
+  width: 100%;
+  height: 2em !important;
+  display: block;
+}
+
+.blob_3{
+  width: 100%;
+  height: 3em !important;
+  display: block;
+}
+
+.blob_4{
+  width: 100%;
+  height: 4em !important;
+  display: block;
+}
+
 .space {
   max-height: 1px;
   min-height: 1px;
@@ -232,9 +256,11 @@ padding-top: 10px;
 }
 
 #Logo_2{
-  width:50px;
+  width:4em;
   position: fixed;
   bottom: 0;
+  padding-bottom: .5em;
+  padding-left: .2em;
 }
 
 #fair{
@@ -295,12 +321,21 @@ margin-bottom:0;
 
 /* *************************  Menu  *********************************** */
 
+#nav_wrapper_2{
+  background-color: #1F1F1F !important;
+  float:left;
+  border-top: 1px solid #5075D5;
+  border-bottom: 1px solid #5075D5;
+  z-index: 100;
+  height: 85px;
+}
+
 #nav_wrapper{
-    background-color: #1F1F1F !important;
-    float:left;
-    border-top: 1px solid #5075D5;
-    border-bottom: 1px solid #5075D5;
-    z-index: 100;
+  background-color: #1F1F1F !important;
+  float:left;
+  border-top: 1px solid #5075D5;
+  border-bottom: 1px solid #5075D5;
+  z-index: 100;
 }
 
 
@@ -311,7 +346,7 @@ margin-bottom:0;
 }
 
 .small_font{
-  font-size: 1.4em !important;
+  font-size: 1.9em !important;
 }
 
 .nav_title:hover{
@@ -414,9 +449,17 @@ font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 .info{
 padding-top:0;
 color:white;
-font-size: 2.5em;
+font-size: 2.6em;
 line-height: 2em;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.info-xs{
+  padding-top:0;
+  color:white;
+  font-size: 1.9em;
+  line-height: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .info_2{
@@ -477,16 +520,35 @@ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 #designers{
-font-size: 1em;
+font-size: 1.2em;
 color: yellow;
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 #entrepreneurs{
 color: #CC3333;
-font-size: 1em;
+font-size: 1.1em;
 font-weight: 700;
 font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+#developers-xs{
+  font-size: 1em;
+  color: green;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#designers-xs{
+  font-size: 1.2em;
+  color: yellow;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#entrepreneurs-xs{
+  color: #CC3333;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 }
 
 #Rails{
@@ -511,6 +573,30 @@ width: 100px;
 #css3{
 width: 70px;
 }
+
+#Rails-xs{
+  width: 60px;
+}
+
+#MySQL-xs{
+  width: 80px;
+}
+
+
+#JQuery-xs{
+  width: 60px;
+}
+
+
+#HMTL-xs{
+  width: 80px;
+}
+
+
+#css3-xs{
+  width: 50px;
+}
+
 
 
 
@@ -676,34 +762,7 @@ color: red;
 font-size: 2.3vw;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0)
-{ 
-	.info_4{
-	padding-top:3%;
-	margin-bottom:0;
-	margin-top:0;
-	color:white;
-	margin-left: 10%;
-	font-size: 1.8vw;
-	width: 48%;
-	line-height: 150%;
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	}
-	
-	.info_5{
-	padding-top:0;
-	margin-bottom:0;
-	margin-top:0;
-	color:white;
-	margin-left: 5%;
-	font-size: 1.8vw;
-	width: 60%;
-	line-height: 150%;
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	}
 
-
-}
 
 /* **********************************************  HOW WE WORK ********************************************* */
 
@@ -959,854 +1018,4 @@ width: 57%;
 line-height: 150%;
   font-family: "Arial Black", Gadget, sans-serif;
 }
-
-
-//
-///* ***************************************  Media Quieries *************************************** */
-//
-//
-//@media only screen
-//and (min-width: 360px)
-//and (max-width: 1000px)
-//and (orientation : landscape){
-//
-//	.partial{
-//	display: block;
-//	margin-left:0;
-//	padding: 5%;
-//	padding-top: 20%;
-//	padding-bottom: 20%;
-//	margin-top: 60%;
-//	margin-bottom: 60%;
-//	width:100%;
-//	}
-//
-//
-//	#what_we_do{
-//	margin-top: 30%;
-//	padding-top: 20%;
-//	}
-//
-//
-//	#Logo_2{
-//    width: 60px;
-//	float: right;
-//	padding-top:6px;
-//	display:none;
-//	vertical-align:top;
-//	}
-//
-//	#nav_wrapper{
-//	background-color: #1F1F1F;
-//	float:left;
-//	width:100%;
-//	margin-left:0;
-//	border-top: 1px solid #5075D5;
-//	border-bottom: 1px solid #5075D5;
-//	text-align:center;
-//	}
-//
-//	#nav{
-//	width:100%;
-//	}
-//
-//	#page_title{
-//	display:none;
-//	}
-//}
-//
-//
-//
-///* **********************************************  Contact ********************************************* */
-//
-//
-//.field_1{
-//	display:block;
-//	width:100%;
-//	color:white;
-//	font-size:2vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	padding-right: 3%;
-//	padding-bottom: 5%;
-//	}
-//
-//	.field_2{
-//	width:100%;
-//	color:white;
-//	font-size:2vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	text-align:center;
-//	padding-bottom: 7%;
-//	}
-//
-//	.field_3{
-//	width:100%;
-//	color:white;
-//	font-size:2vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	text-align:center;
-//	padding-bottom:4%;
-//	}
-//
-//	.actions{
-//	width: 80%;
-//	margin-left: 10%;
-//	line-height: 100px;
-//	}
-//
-//	.field_labels{
-//	float: left;
-//	padding-bottom: 5%;
-//	font-size: 2.4vw;
-//	}
-//
-//	#submit_buttom{
-//	border: 2px solid #5075D5;
-//	color:white;
-//	background-color:#5075D5;
-//	font-size:1.5vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#submit_buttom_1{
-//	border: 2px solid #5075D5;
-//	color:white;
-//	line-height: 65px;
-//	background-color:#5075D5;
-//	font-size:2vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	width:30%;
-//	margin-top: 14%;
-//	margin-left: 35%;
-//	}
-//
-//	.fields_show{
-//	color:white;
-//	margin-top:5%;
-//	font-size:1.5vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#link{
-//	color:yellow;
-//	font-size:1.5vw;
-//	padding:2%;
-//	}
-//
-//	#form_wrapper{
-//	margin-top:5%;
-//	margin-left: 35%;
-//	width:100%;
-//	max-width:25em;
-//
-//	}
-//
-//	input{
-//	width: 100%;
-//	margin-left:1%;
-//	line-height:30px;
-//	font-size:2vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	textarea{
-//	width: 100%;
-//	margin-left:1%;
-//	line-height:30px;
-//	font-size:2vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#notice{
-//	padding-top:5%;
-//	color:white;
-//	margin-top: -2%;
-//	margin-left: 20%;
-//	font-size: 1.6vw;
-//	width: 61%;
-//	text-align:center;
-//	line-height: 150%;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#contact_form{
-//	color: white;
-//	margin-left: 10%;
-//	font-size: 2vw;
-//	width: 90%;
-//	line-height: 115%;
-//	float: none;
-//	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
-//	margin-bottom: 0;
-//	margin-left: 5%;
-//	padding-top: 15%;
-//	margin-top: 0;
-//	}
-//
-//
-//.contact_links{
-//  font-size: 1.2em;
-//  top:.5em;
-//  margin-left: 10%;
-//  color: #5c91ff;
-//  position: relative;
-//  z-index:0;
-//}
-//
-//.contact_links:hover{
-//  color: #5c91ff;
-//}
-//
-//@media only screen
-//and (min-width: 360px)
-//and (max-width: 1000px)
-//and (orientation : portrait){
-//
-//	.partial{
-//	display: block;
-//	margin-left:0;
-//	padding: 5%;
-//	padding-top: 40%;
-//	padding-bottom: 150%;
-//	margin-top: 5%;
-//	margin-bottom: 5%;
-//	width:100%;
-//	}
-//
-//
-//
-//	#fair{
-//	display:block;
-//	margin-top:10%;
-//	padding:0;
-//	color: white;
-//	font-size:16vw;
-//	margin-left: 15%;
-//	}
-//
-//	#reliable{
-//	padding:0;
-//	color: white;
-//	font-size:16vw;
-//	margin-left: 25%;
-//	}
-//
-//	#smart{
-//	padding:0;
-//	margin-top:0;
-//	color: white;
-//	font-size:16vw;
-//	margin-left: 42%;
-//	}
-//
-//	#DevCo{
-//	display:inline;
-//	width:50%;
-//	float: left;
-//	margin-left: 5%;
-//	margin-right: 0;
-//	}
-//
-//	#Logo{
-//	display: inline;
-//	width:15%;
-//	float: right;
-//	margin-top:3%;
-//	margin-right:0;
-//	margin-left: 0;
-//	padding-top:1%;
-//	padding-bottom: 2%;
-//	}
-//
-//	#Logo_2{
-//	width:8%;
-//	float: right;
-//	margin-top: .5%;
-//	margin-right: 18%;
-//	padding-top:0;
-//	padding-bottom: 0;
-//	display:none;
-//	}
-//
-//	#nav_wrapper{
-//	background-color: #1F1F1F !important;
-//	float:left;
-//	width:100%;
-//	margin-left:3%;
-//	border-top: 1px solid #5075D5;
-//	border-bottom: 1px solid #5075D5;
-//	margin-bottom:20%;
-//	text-align:center;
-//	}
-//
-//	.sticky{
-//	position:fixed; top:0;
-//	margin-left: 0 !important;
-//
-//	}
-//
-//	#nav{
-//	width:100%;
-//	}
-//
-//	.no_wrap{
-//	white-space: nowrap !important;
-//	}
-//
-//	#nav li a
-//	{
-//	color:#5075D5;
-//	font-size: 6.5vw;
-//	}
-//
-//	#image_wrapper{
-//	margin-left: 0;
-//	margin-top: 10%;
-//	margin-bottom:2%;
-//	width:100%;
-//	display:inline-block;
-//	}
-
-//
-//	#developers{
-//	font-size: 8vw;
-//	color: green;
-//	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-//	}
-//
-//	#designers{
-//	font-size: 8.4vw;
-//	color: yellow;
-//	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-//	}
-//
-//	#entrepreneurs{
-//	color: #CC3333;
-//	font-size: 8vw;
-//	font-weight: 700;
-//	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
-//	}
-//
-//	#Rails{
-//	display:inline-block;
-//	width:13%;
-//	padding-left:5%;
-//	padding-right:5%;
-//	margin:0;
-//	}
-//
-//	#HMTL{
-//	display:inline-block;
-//	width:15%;
-//	padding-left:0;
-//	padding-right:5%;
-//	margin:0;
-//	}
-//
-//
-//
-//
-//	#JQuery{
-//	display:inline-block;
-//	width:15%;
-//	padding-left:0;
-//	padding-right:5%;
-//	margin:0;
-//	}
-//
-//
-//	#MySQL{
-//	display:inline-block;
-//	width:15%;
-//	padding-left:5%;
-//	padding-right:0;
-//	margin:0;
-//	}
-//
-//
-//	#css3{
-//	display:inline-block;
-//	width:11%;
-//	padding-left:0;
-//	padding-right:5%;
-//	margin:0;
-//	}
-//
-//	.arrow{
-//	width: 14%;
-//	float: right;
-//	margin-right: 0;
-//	margin-top: 2%;
-//	}
-//
-//
-//	.arrow_left{
-//	width: 14%;
-//	float: right;
-//	margin-right: 2%;
-//	margin-top: 2%;
-//	display:none;
-//	}
-//
-//
-//	.info_2{
-//	padding-top:0;
-//	color:#6DB863;
-//	margin-left: 5%;
-//	margin-top: -5%;
-//	font-size: 7vw;
-//	width: 100%;
-//	line-height: 150%;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#first_step{
-//	font-weight:700;
-//	font-size: 8vw;
-//	color:white;
-//	}
-//
-//	#text_wrapper{
-//	margin-left: 10%;
-//	padding-top:10%;
-//	color:white;
-//	font-size: 4vw;
-//	width: 80%;
-//	line-height: 150%;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#rotate_arrow{
-//	display:none;
-//	}
-//
-//	#agile{
-//	width: 60%;
-//	display: block;
-//	padding-left: 20%;
-//	padding-top:8%;
-//	padding-right:20%;
-//	margin:0;
-//	}
-//
-//	#list{
-//	margin-left: 5%;
-//	padding-top:72%;
-//	color:white;
-//	font-size: 4.3vw;
-//	width: 100%;
-//	line-height: 120%;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#we_believe{
-//	margin-left: 10%;
-//	line-height:100%;
-//	width:100%;
-//	font-size: 7vw;
-//	}
-//
-//	#agile_dev{
-//	font-weight:700;
-//	font-size: 5vw;
-//	color:white;
-//	}
-//
-//
-//	.info_3{
-//	padding-top:1%;
-//	margin-bottom:0;
-//	margin-top:-8%;
-//	color:#6DB863;
-//	margin-left: 0;
-//	width: 100%;
-//	line-height: 150%;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	text-align:center;
-//	}
-//
-//	#deployment{
-//	font-size: 2vw;
-//	color: white;
-//	line-height: 50% !important;
-//	}
-//
-//
-//	.info_4{
-//	padding-top:9%;
-//	margin-bottom:0;
-//	margin-top:0;
-//	color:white;
-//	margin-left: 3%;
-//	font-size: 3vw;
-//	width: 90%;
-//	line-height: 150%;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	.info_5{
-//	padding-top:0;
-//	margin-bottom:0;
-//	margin-top:-8%;
-//	color:white;
-//	margin-left: 5%;
-//	font-size: 6vw;
-//	width: 100%;
-//	line-height: 150%;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#project{
-//	font-weight:700;
-//	font-size: 6vw;
-//	color:white;
-//	}
-//
-//	#done_title{
-//	font-weight:500;
-//	color:#6DB858;
-//	font-size: 6vw;
-//	}
-//
-//	#handshake{
-//	display:block;
-//	width: 30%;
-//	padding-top: 0;
-//	padding-left:35%;
-//	padding-right:31%;
-//	padding-bottom:6%;
-//	margin-left: 0;
-//	margin-top:5%;
-//	}
-//
-//
-//
-//	#done{
-//	font-weight:500;
-//	color:#6DB858;
-//	font-size: 6vw;
-//	}
-//
-//
-//	#wont{
-//	color: red;
-//	font-size: 6vw;
-//	}
-//
-//	#middle_info{
-//	margin-left:16%;
-//	padding-top:7%;
-//	}
-//
-//	#last_info{
-//	padding-top:7%;
-//	}
-//
-//	.info_6{
-//	padding-top:0;
-//	padding-left:0;
-//	padding-bottom:0;
-//	padding-right:0;
-//	color:white;
-//	margin-left: 8%;
-//	font-size: 4.2vw;
-//	line-height: 120%;
-//	float:none;
-//	text-align:center;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	.info_7{
-//	padding:0;
-//	color:white;
-//	margin-left: 5%;
-//	margin-top: 1%;
-//	font-size: 9vw;
-//	width: 80%;
-//	line-height: 150%;
-//	float:none;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	margin-bottom:0;
-//	}
-//
-//	.info_8{
-//	padding-top:0;
-//	padding-left:0;
-//	padding-bottom:0;
-//	padding-right:0;
-//	color:white;
-//	margin-left: 8%;
-//	font-size: 4.2vw;
-//	line-height: 120%;
-//	float:none;
-//	text-align:center;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	table{
-//	width: 100%;
-//	margin-left: 0;
-//	border-collapse:separate;
-//	border-spacing:50px;
-//	}
-//
-//	#arrow_1{
-//	width: 14%;
-//	float: right;
-//	margin-right: 0;
-//	margin-top: -3%;
-//	}
-//
-//
-//	#arrow_left_1{
-//	width: 14%;
-//	float: right;
-//	margin-right: 2%;
-//	margin-top: -3%;
-//	display:none;
-//	}
-//
-//
-//	#how_we_work_title{
-//	font-weight:700;
-//	font-size: 6vw;
-//	color:white;
-//	text-decoration: underline;
-//	margin-top: -5%;
-//	}
-//
-//	td {
-//	  display: table-row;
-//	}
-//
-//	tr {
-//    display: block;
-//    margin-top: -25px;
-//	}
-//
-//	.info_9{
-//	color: #F5DEB3;
-//	margin-left: 0;
-//	font-size: 2vw;
-//	width: 100%;
-//	line-height: 115%;
-//	float: none;
-//	padding-top:0;
-//	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
-//	vertical-align: top;
-//	text-align: center;
-//	padding-bottom: 9%;
-//	}
-//
-//	#payment_mobile{
-//	margin-top:15%;
-//	}
-//
-//	.info_10{
-//	color: white;
-//	margin-left: 10%;
-//	font-size: 2vw;
-//	width: 80%;
-//	line-height: 115%;
-//	float: none;
-//	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
-//	margin-bottom: 0;
-//	margin-top: 10%;
-//	}
-//
-//
-//
-//	#contract{
-//	margin:0;
-//	margin-top: 10%;
-//	margin-bottom: 10%;
-//	padding-left:30%;
-//	padding-right:30%;
-//	width:27%;
-//	}
-//
-//
-//	#submit_buttom{
-//	border: 2px solid #5075D5;
-//	color:white;
-//	background-color:#5075D5;
-//	font-size:2vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	.fields_show{
-//	color:white;
-//	margin-top:5%;
-//	font-size:1.5vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#link{
-//	color:yellow;
-//	font-size:1.5vw;
-//	padding:2%;
-//	}
-//
-//	.field_labels{
-//	float: left;
-//	padding-bottom: 5%;
-//	font-size: 4vw;
-//	}
-//
-//	#submit_buttom{
-//	border: 2px solid #5075D5;
-//	color:white;
-//	background-color:#5075D5;
-//	font-size:2.5vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	}
-//
-//	#submit_buttom_1{
-//	border: 2px solid #5075D5;
-//	color:white;
-//	line-height: 130px;
-//	background-color:#5075D5;
-//	font-size:6vw;
-//	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//	width:80%;
-//	margin-top: 30%;
-//	padding-top: 0;
-//	margin-left: 10%;
-//	}
-//
-//	#contact_form{
-//	color: white;
-//	margin-left: 10%;
-//	font-size: 3vw;
-//	width: 90%;
-//	line-height: 115%;
-//	float: none;
-//	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
-//	margin-bottom: 0;
-//	margin-left: 5%;
-//	padding-top: 15%;
-//	margin-top: 0;
-//	text-align: center;
-//	}
-//
-//	#arrow_2{
-//	width: 14%;
-//	float: right;
-//	margin-right: 0;
-//	margin-top: 8%;
-//	}
-//
-//
-//#arrow_left_2{
-//	width: 14%;
-//	float: right;
-//	margin-right: 2%;
-//	margin-top: 8%;
-//	display:none;
-//}
-//
-//
-//
-//
-//#page_title{
-//color:#FFFFFF;
-//margin-left: 0;
-//font-size: 8vw;
-//margin-top: 1%;
-//text-align: center;
-//  color: #5c91ff;
-//
-//}
-//
-//#titles{
-//color:#5075D5;
-//margin-left: 0;
-//font-size: 5vw;
-//text-align:center;
-//}
-//
-//#dh_profile_pic{
-//display:block;
-//width: 30%;
-//margin-left:34%;
-//margin-right:32%;
-//border: 4px solid white;
-//margin-bottom: 10%;
-//}
-//
-//#info_drew{
-//padding-bottom: 10%;
-//color: #6DB863;
-//margin-left: 5%;
-//font-size: 1.4vw;
-//width: 87%;
-//line-height: 150%;
-//font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//text-align:center;
-//}
-//
-//#sdsueetutor_link{
-//  color: #4F76D4;
-//}
-//
-//
-//
-//
-//
-//#mh_profile_pic{
-//display:block;
-//margin-left:34%;
-//margin-right:32%;
-//width: 30%;
-//border: 4px solid white;
-//margin-bottom: 10%;
-//}
-//
-//#info_matt{
-//display:block;
-//padding-bottom: 10%;
-//color: #6DB863;
-//margin-left: 5%;
-//font-size: 1.4vw;
-//width: 87%;
-//line-height: 150%;
-//font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//text-align:center;
-//}
-//
-//
-//#payment_slide{
-//padding-top:30%;
-//margin-top: -10%;
-//}
-//
-//#contracts_slide{
-//padding-top:10%;
-//margin-top: -10%;
-//}
-//
-//#notice{
-//padding-top:25%;
-//color:white;
-//margin-top: -2%;
-//margin-left: 20%;
-//font-size: 3vw;
-//width: 61%;
-//text-align:center;
-//line-height: 150%;
-//font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-//}
-//
-//#WWD_slide_2{
-//margin-top:10%;
-//}
-//
-//#WWD_slide_3{
-//margin-top:10%;
-//}
-//}
-//
-//
-
-
 
