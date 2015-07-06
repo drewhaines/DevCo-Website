@@ -449,7 +449,7 @@ font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 .info{
 padding-top:0;
 color:white;
-font-size: 2.6em;
+font-size: 3.3em;
 line-height: 2em;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
@@ -458,7 +458,7 @@ font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida San
   padding-top:0;
   color:white;
   font-size: 1.5em;
-  line-height: 1.2em;
+  line-height: 1.4em;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
@@ -470,6 +470,15 @@ font-size: 2.5vw;
 width: 60%;
 line-height: 150%;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.info_3{
+  padding-top:0;
+  color:#6DB863;
+  margin-left: 5%;
+  font-size: 1.5em;
+  line-height:1.2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .arrow{
@@ -533,20 +542,20 @@ font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
 }
 
 #developers-xs{
-  font-size: .9em;
+  font-size: 1.2em;
   color: green;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 #designers-xs{
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: yellow;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 #entrepreneurs-xs{
   color: #CC3333;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 700;
   font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 }
@@ -609,6 +618,12 @@ font-size: 3.7vw;
 color:white;
 }
 
+#first_step-xs{
+  font-weight:700;
+  font-size: 1.6em;
+  color: white;
+}
+
 #text_wrapper{
 margin-left: 40%;
 padding-top:2%;
@@ -619,11 +634,25 @@ line-height: 120%;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
+#text_wrapper-xs{
+  padding-top:2%;
+  color:white;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
 #rotate_arrow{
 width: 15%;
 float: left;
 margin-left: 15%;
 margin-top: 0;
+}
+
+#rotate_arrow-xs{
+  width: 60px;
+  margin-top: 0;
+  margin-right: 2em;
 }
 
 
@@ -641,6 +670,10 @@ padding-top:2%;
 
 }
 
+#agile-xs{
+  width: 150px;
+}
+
 #list{
 margin-left: 50%;
 padding-top:8.2%;
@@ -649,6 +682,14 @@ font-size: 2.5vw;
 width: 47%;
 line-height: 120%;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+#list-xs{
+  padding-left: 1em;
+  color:white;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 #we_believe{
@@ -661,9 +702,33 @@ font-size: 3vw;
 color:white;
 }
 
+#agile_dev{
+  font-weight:700;
+  font-size: 1.5em;
+  color:white;
+}
+
 #agile_link{
 color:#7BBDF9;
 }
+
+
+#agile_link-xs{
+  text-align: right;
+}
+
+#agile_link-xs{
+  color:#7BBDF9;
+}
+
+#agile_link-xs:link {
+  text-decoration: underline;
+}
+
+#agile_link-xs:hover{
+  color:#B039D3;
+}
+
 
 #agile_link:link {
     text-decoration: underline;
@@ -683,6 +748,41 @@ font-size: 2.5vw;
 width: 70%;
 line-height: 150%;
 font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+
+.info_3-xs{
+  padding-top:1%;
+  margin-bottom:0;
+  margin-top:0;
+  color:#6DB863;
+  margin-left: 5%;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+
+.info_4-xs{
+  padding-top:1%;
+  margin-bottom:0;
+  margin-top:0;
+  color:white;
+  margin-left: 5%;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.info_44-xs{
+  padding-top:1%;
+  margin-bottom:0;
+  margin-top:0;
+  color:white;
+  margin-left: 5%;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 /* **************************   Slide 4   ***************************/
@@ -725,10 +825,22 @@ font-size: 3vw;
 color:white;
 }
 
+#project-xs{
+  font-weight:700;
+  font-size: 1.5em;
+  color:white;
+}
+
 #done_title{
 font-weight:500;
 color:#6DB858;
 font-size: 3.7vw;
+}
+
+#done_title-xs{
+  font-weight:500;
+  color:#6DB858;
+  font-size: 1.4em;
 }
 
 #handshake{
@@ -736,6 +848,10 @@ float: right;
 width: 18%;
 margin-top: 6%;
 margin-right: 5%;
+}
+
+#handshake-xs{
+  width: 65px;
 }
 
 #middle_info{
@@ -760,6 +876,25 @@ color: orange;
 #wont{
 color: red;
 font-size: 2.3vw;
+}
+
+
+
+#done-xs{
+  font-weight:500;
+  color:#6DB858;
+  font-size: 1.2em;
+}
+
+#lasting_relationships-xs{
+  color: orange;
+  font-size: 1.2em;
+
+}
+
+#wont-xs{
+  color: red;
+  font-size: 1.2em;
 }
 
 
