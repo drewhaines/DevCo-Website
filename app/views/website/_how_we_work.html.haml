@@ -32,35 +32,42 @@
           = succeed "." do
             %span#price 2-4 developers
   .visible-xs
-    %p#how_we_work_title.info_7
-      Price
-    .col-xs-12
-      .info_6
-        As any good developer will tell you,
-        %br/
-        = succeed "." do
-          %span#it_depends IT DEPENDS
-        Size, complexity, and your business all affect the price we quote
-      .info_6
-        We charge
-        = succeed "." do
-          %span#hourly HOURLY
-        So you only pay for time actually spent coding, designing, testing, deploying, and communicating
-    .col-xs-12
-      .info_8
-        We
-        %span#do_not DO NOT
-        give fixed price quotes.  Fixed price in software can lead to unfair pricing for either party.  Instead, we can help estimate the size of your project, but it is only that, an
-        = succeed "." do
-          %span#estimate ESTIMATE
-      .info_8
-        For a baseline idea,  we charge
-        %br/
-        = succeed "." do
-          %span#price $100/hr per developer
-        However, that rate can vary depending on the project. We build in teams of
-        = succeed "." do
-          %span#price 2-4 developers
+    .slide_container
+      %p#how_we_work_title-xs.info_7-xs
+        Price
+      .space-8
+      .row
+        .col-xs-12
+          .info_6-xs
+            As any good developer will tell you,
+            %br/
+            = succeed "." do
+              %span#it_depends IT DEPENDS
+            Size, complexity, and your business all affect the price we quote
+          .space-6
+          .info_6-xs
+            We charge
+            = succeed "." do
+              %span#hourly HOURLY
+            So you only pay for time actually spent coding, designing, testing, deploying, and communicating
+      .row
+        .space-6
+        .col-xs-12
+          .info_8-xs
+            We
+            %span#do_not DO NOT
+            give fixed price quotes.  Fixed price in software can lead to unfair pricing for either party.  Instead, we can help estimate the size of your project, but it is only that, an
+            = succeed "." do
+              %span#estimate ESTIMATE
+          .space-6
+          .info_8-xs
+            For a baseline idea,  we charge
+            %br/
+            = succeed "." do
+              %span#price $100/hr per developer
+            However, that rate can vary depending on the project. We build in teams of
+            = succeed "." do
+              %span#price 2-4 developers
 / **********************************  Slide 2  ***************************************
 #payment_slide.slide_2
   .hidden-xs
@@ -75,17 +82,19 @@
     %p.info_9
       Invoices are sent and paid electronically.
   .visible-xs
-    %p#how_we_work_title.info_7
-      Payment
-    .col-xs-10.col-xs-offset-1
-      %p#payment_mobile.info_9
-        We invoice credit worthy clients bi-weekly.
-      %p.info_9
-        For all others, including start-ups, we require payment in advance.  Whatever amount you can afford.  We start with a small deposit, then deliver results and build trust from there.
-      %p.info_9
-        A 1.5% monthly late fee applies to all balances outstanding greater than 30 days.
-      %p.info_9
-        Invoices are sent and paid electronically.
+    .slide_container
+      %p#how_we_work_title-xs.info_7-xs
+        Payment
+      .space-8
+      .col-xs-10.col-xs-offset-1
+        %p#payment_mobile.info_9-xs
+          We invoice credit worthy clients bi-weekly.
+        %p.info_9-xs
+          For all others, including start-ups, we require payment in advance.  Whatever amount you can afford.  We start with a small deposit, then deliver results and build trust from there.
+        %p.info_9-xs
+          A 1.5% monthly late fee applies to all balances outstanding greater than 30 days.
+        %p.info_9-xs
+          Invoices are sent and paid electronically.
 / **********************************  Slide 3  ***************************************
 #contracts_slide.slide_3
   .hidden-xs
@@ -102,21 +111,20 @@
       %br
       %br
   .visible-xs
-    %p#how_we_work_title.info_7
-      Contracts
-    .row
-      .col-xs-12.text-center
-        = image_tag "Contract.png", :id=>"contract"
-    .row
-      .col-xs-12
-        %div
-          %p.info_10
-            We use a standard contract that covers the basics for software development.  That includes price, schedule, confidentiality, and rights of ownership.
-          %p.info_10
-            If you are concerned about privacy, we are happy to sign a non-disclosure agreement (NDA) before discussing your project.
-          %br
-          %br
-          %br
-          %br
+    .slide_container
+      %p#how_we_work_title-xs.info_7-xs
+        Contracts
+      .space-8
+      .row
+        .col-xs-12.text-center
+          = image_tag "Contract.png", :id=>"contract-xs"
+      .space-8
+      .row
+        .col-xs-12
+          %div
+            %p.info_10-xs
+              We use a standard contract that covers the basics for software development.  That includes price, schedule, confidentiality, and rights of ownership.
+            %p.info_10-xs
+              If you are concerned about privacy, we are happy to sign a non-disclosure agreement (NDA) before discussing your project.
 = image_tag "arrow.png", :class=>"arrow", :id=>"arrow_1"
 = image_tag "arrow_left.png", :class=>"arrow_left", :id=>"arrow_left_1"
