@@ -192,6 +192,11 @@ background-color:#1F1F1F !important;
     height: 200px;
 }
 
+#drew_image-xs{
+  width: 75px;
+  height: 75px;
+}
+
 #matt_image{
     width: 200px;
     height: 200px;
@@ -210,6 +215,22 @@ background-color:#1F1F1F !important;
     position: relative;
     top: 30px;
     z-index: 0;
+}
+
+.circle1-xs{
+  position: absolute !important;
+  top: 0; bottom:0; left: 0; right:0;
+  margin: auto;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  -webkit-border-radius: 37px;
+  -moz-border-radius: 37px;
+  background-image: image_url('Drew_current_pic_med.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+  position: relative;
+  z-index: 0;
 }
 
 .circle2{
@@ -1070,14 +1091,12 @@ width:13%;
 width: 6%;
 float: right;
 margin-right: 0;
-margin-top:-15%;
 }
 
 #arrow_left_2{
 width: 6%;
 float: right;
 margin-right: 0;
-margin-top:-15%;
 }
 
 .twitter_icon{
@@ -1088,6 +1107,16 @@ margin-top:-15%;
 .contact_icons{
   width: 50px;
   height: 50px;
+}
+
+.twitter_icon-xs{
+  width: 25px;
+  height: 25px;
+}
+
+.contact_icons-xs{
+  width: 35px;
+  height: 35px;
 }
 
 .block{
@@ -1113,12 +1142,27 @@ text-align: center;
   font-family: 'Pacifico', cursive;
 }
 
+#page_title-xs{
+  color: #5c91ff;
+  margin-left: 3%;
+  font-size: 1.8em;
+  margin-top: 1%;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
 #titles{
 color:#5075D5;
 font-size: 2.2vw;
   color: white;
   font-family: 'Josefin Slab', serif;
+}
 
+#titles-xs{
+  color:#5075D5;
+  font-size: 1.6em;
+  color: white;
+  font-family: 'Josefin Slab', serif;
 }
 
 #dh_profile_pic{
@@ -1138,6 +1182,13 @@ width: 57%;
 line-height: 150%;
   font-family: "Arial Black", Gadget, sans-serif;
 
+}
+
+#info_drew-xs{
+  color: #fffbf9;
+  font-size: 1em;
+  line-height: 1em;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 
 #sdsueetutor_link{
@@ -1164,5 +1215,39 @@ font-size: 1.2vw;
 width: 57%;
 line-height: 150%;
   font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#contact_form{
+  color:white;
+  font-size: 2.8em;
+}
+
+#submit_buttom_1{
+  background-color: #5c91ff;
+  color: white;
+  font-size: 2.6em;
+  border: none;
+  padding: 0 20px;
+}
+
+#submit_buttom_1:hover{
+  background-color: #5275d8;
+}
+
+#contact_form-xs{
+  color:white;
+  font-size: 2em;
+}
+
+#submit_buttom_1-xs{
+  background-color: #5c91ff;
+  color: white;
+  font-size: 2em;
+  border: none;
+  padding: 0 15px;
+}
+
+#submit_buttom_1-xs:hover{
+  background-color: #5275d8;
 }
 
