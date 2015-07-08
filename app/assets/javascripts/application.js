@@ -22,7 +22,7 @@ var current_slide = ".slide_1";
 
 $(document).ready(function(){
   
-    var menu = document.querySelector('#nav_wrapper');
+    var menu = document.querySelector('#nav_wrapper_2');
     var origOffsetY = menu.offsetTop;
     var current_menu=1;
 
@@ -80,8 +80,34 @@ $(document).ready(function(){
                 scrollTop: ($('#what_we_do').offset().top-30)
             },500);
         }
+    });
+
+    $('#menu_1-xs').unbind().click(function() {
+        $('.arrow_left').hide();
+        $('.arrow').show();
 
 
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+        $('.menu_title').removeClass('current');
+        $('#menu_1-xs').addClass('current');
+        slide_number = 1;
+        number_of_slides = 4;
+        current_menu = 1;
+
+        if(!($('#nav_wrapper_2').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#what_we_do').offset().top-80)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#what_we_do').offset().top-80)
+            },500);
+        }
     });
 
     $('#menu_2').unbind().click(function() {
@@ -111,9 +137,38 @@ $(document).ready(function(){
                 scrollTop: ($('#how_we_work').offset().top-30)
             },500);
         }
-
-
     });
+
+    $('#menu_2-xs').unbind().click(function() {
+        $('.arrow_left').hide();
+        $('.arrow').show();
+
+
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+        $('.menu_title').removeClass('current');
+        $('#menu_2-xs').addClass('current');
+        slide_number = 1;
+        number_of_slides = 3;
+        current_menu = 2;
+
+
+        if(!($('#nav_wrapper_2').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#how_we_work').offset().top-80)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#how_we_work').offset().top-80)
+            },500);
+        }
+    });
+
+
 
     $('#menu_3').unbind().click(function() {
         $('.arrow_left').hide();
@@ -140,6 +195,37 @@ $(document).ready(function(){
         } else{
             $('html, body').animate({
                 scrollTop: ($('#about_us').offset().top-30)
+            },500);
+        }
+
+
+    });
+
+    $('#menu_3-xs').unbind().click(function() {
+        $('.arrow_left').hide();
+        $('.arrow').show();
+
+
+        $('.slide_1').hide();
+        $('.slide_2').hide();
+        $('.slide_3').hide();
+        $('.slide_4').hide();
+        $('.slide_1').show();
+
+
+        $('.menu_title').removeClass('current');
+        $('#menu_3-xs').addClass('current');
+        slide_number = 1;
+        number_of_slides = 2;
+
+
+        if(!($('#nav_wrapper_2').hasClass('sticky'))) {
+            $('html, body').animate({
+                scrollTop: ($('#about_us').offset().top-80)
+            },500);
+        } else{
+            $('html, body').animate({
+                scrollTop: ($('#about_us').offset().top-80)
             },500);
         }
 
@@ -173,9 +259,16 @@ $(document).ready(function(){
                 scrollTop: ($('#what_we_do').offset().top-120)
             },500);
         } else{
-            $('html, body').animate({
-                scrollTop: ($('#what_we_do').offset().top-30)
-            },500);
+            if($('#nav_wrapper_2').is(':visible')){
+                $('html, body').animate({
+                    scrollTop: ($('#what_we_do').offset().top-80)
+                },500);
+            } else{
+                $('html, body').animate({
+                    scrollTop: ($('#what_we_do').offset().top-30)
+                },500);
+            }
+
         }
     }
 
@@ -203,9 +296,15 @@ $(document).ready(function(){
                 scrollTop: ($('#how_we_work').offset().top-120)
             },500);
         } else{
-            $('html, body').animate({
-                scrollTop: ($('#how_we_work').offset().top-30)
-            },500);
+            if($('#nav_wrapper_2').is(':visible')){
+                $('html, body').animate({
+                    scrollTop: ($('#how_we_work').offset().top-80)
+                },500);
+            } else{
+                $('html, body').animate({
+                    scrollTop: ($('#how_we_work').offset().top-30)
+                },500);
+            }
         }
 
     }
@@ -234,9 +333,15 @@ $(document).ready(function(){
                 scrollTop: ($('#about_us').offset().top-120)
             },500);
         } else{
-            $('html, body').animate({
-                scrollTop: ($('#about_us').offset().top-30)
-            },500);
+            if($('#nav_wrapper_2').is(':visible')){
+                $('html, body').animate({
+                    scrollTop: ($('#about_us').offset().top-80)
+                },500);
+            } else{
+                $('html, body').animate({
+                    scrollTop: ($('#about_us').offset().top-30)
+                },500);
+            }
         }
     }
 
@@ -267,8 +372,10 @@ function scroll () {
 		  
 			$('.menu_title').removeClass('current');
 			$('#menu_1').addClass('current');
-					
- 					number_of_slides = 4;
+            $('#menu_1-xs').addClass('current');
+
+
+              number_of_slides = 4;
 					slide_number = 1;
 					$('#arrow_left_1').hide();
 			}
@@ -285,7 +392,9 @@ function scroll () {
 					
 				$('.menu_title').removeClass('current');
 				$('#menu_1').addClass('current');
- 					number_of_slides = 4;
+                $('#menu_1-xs').addClass('current');
+
+            number_of_slides = 4;
 					slide_number = 1;
 		  }
 
@@ -295,6 +404,7 @@ function scroll () {
 		  
 			$('.menu_title').removeClass('current');
 			$('#menu_2').addClass('current');
+            $('#menu_2-xs').addClass('current');
 			
  					slide_number = 1;
 					number_of_slides = 3;
@@ -314,7 +424,9 @@ function scroll () {
 
 					$('.menu_title').removeClass('current');
 					$('#menu_2').addClass('current');
- 					slide_number = 1;
+                    $('#menu_2-xs').addClass('current');
+
+            slide_number = 1;
 					number_of_slides = 3;
 					current_menu = 2;
 		  }
@@ -325,8 +437,10 @@ function scroll () {
 			
 			$('.menu_title').removeClass('current');
 			$('#menu_3').addClass('current');
-			
-				slide_number = 1;
+            $('#menu_3-xs').addClass('current');
+
+
+              slide_number = 1;
 				number_of_slides = 2;
 			}
 
@@ -343,7 +457,9 @@ function scroll () {
 				
 				$('.menu_title').removeClass('current');
 				$('#menu_3').addClass('current');
-				slide_number = 1;
+                $('#menu_3-xs').addClass('current');
+
+                slide_number = 1;
 				number_of_slides = 2;
 		  } 
 
@@ -352,7 +468,9 @@ function scroll () {
 		  if ($(window).scrollTop() >= (origOffsetY_partial_4-250)) {
 			$('.menu_title').removeClass('current');
 			$('#menu_4').addClass('current');
-		  } 
+            $('#menu_4-xs').addClass('current');
+
+          }
 }
 
 });
