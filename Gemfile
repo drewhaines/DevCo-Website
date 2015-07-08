@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+gem 'rack', '1.5.5'
 
 # Use unicorn as the app server
 gem 'unicorn-rails'
@@ -26,6 +27,8 @@ gem 'paperclip'
 
 # MySQL
 gem 'mysql'
+
+gem 'kgio', '>= 2.9.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

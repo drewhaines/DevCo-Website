@@ -1,51 +1,117 @@
 / **********************************  Slide 1  ***************************************
 #AU_slide_1.slide_1
-  %p#page_title Who we Are
-  %p#titles Drew Haines, CTO
-  #drew_image
-    .circle1
-  %p#info_drew
-    Drew comes to DevCo with a background in Electrical Engineering, however has gravitated heavily to the computer science
-    end of the spectrum!
-    %br
-    %br
-    In addition to Devco, Drew also ran
-    = succeed "," do
-      %span#sdsueetutor
-        = link_to "SDSUeeTutor.com", "http://sdsueetutor.com", :target => "_blank", :id => "sdsueetutor_link"
-    a professional tutoring company for engineering and programming students at San Diego State.
-    %br
-    %br
-    His passion for technology and automation are unmatched
-    saying, "Technology and the internet are critical to any business because they bring automation. You can have programs running
-    on the internet 24/7 making the growth potential enormous for your business!"
-    %br
-    %span.block.text-center.right_1
-      = link_to image_tag("twitter.png", class: "twitter_icon"), "https://twitter.com/drewhaines3", class: "contact_links", target: '_blank'
-      = link_to image_tag("linkedin.png", class: "contact_icons"), "https://www.linkedin.com/pub/drew-haines/47/863/614", class: "contact_links", target: '_blank'
-      = link_to image_tag("github.png", class: "contact_icons"), "https://github.com/drewhaines", class: "contact_links", target: '_blank'
+  .hidden-xs
+    %p#page_title Who we Are
+    %p#titles Drew Haines, CTO
+    .row
+      .col-xs-4
+        #drew_image
+          .circle1
+      .col-xs-6
+        %p#info_drew
+          Drew comes to DevCo with a background in Electrical Engineering, however has gravitated heavily to the computer science
+          end of the spectrum!
+          %br
+          %br
+          In addition to Devco, Drew also ran
+          = succeed "," do
+            %span#sdsueetutor
+              = link_to "SDSUeeTutor.com", "http://sdsueetutor.com", :target => "_blank", :id => "sdsueetutor_link"
+          a professional tutoring company for engineering and programming students at San Diego State.
+          %br
+          %br
+          His passion for technology and automation are unmatched
+          saying, "Technology and the internet are critical to any business because they bring automation. You can have programs running
+          on the internet 24/7 making the growth potential enormous for your business!"
+          %br
+          %span.block.text-center.right_1
+            = link_to image_tag("twitter.png", class: "twitter_icon"), "https://twitter.com/drewhaines3", class: "contact_links", target: '_blank'
+            = link_to image_tag("linkedin.png", class: "contact_icons"), "https://www.linkedin.com/pub/drew-haines/47/863/614", class: "contact_links", target: '_blank'
+            = link_to image_tag("github.png", class: "contact_icons"), "https://github.com/drewhaines", class: "contact_links", target: '_blank'
+  .visible-xs
+    .row
+      .col-xs-12
+        %p#page_title-xs Who we Are
+    .row
+      .col-xs-12.text-center
+        %p#titles-xs Drew Haines, CTO
+    .row
+      .col-xs-12.text-center
+        #drew_image-xs
+          .circle1-xs
+    .space-6
+    .row
+      .col-xs-12
+        %p#info_drew-xs
+          Drew comes to DevCo with a background in Electrical Engineering, however has gravitated heavily to the computer science
+          end of the spectrum!
+          %br
+          %br
+          His passion for technology and automation are unmatched
+          saying, "Technology and the internet are critical to any business because they bring automation. You can have programs running
+          on the internet 24/7 making the growth potential enormous for your business!"
+          %br
+    .row
+      .col-xs-12.text-center
+        %p
+          %span.block
+          = link_to image_tag("twitter.png", class: "twitter_icon-xs"), "https://twitter.com/drewhaines3", class: "contact_links", target: '_blank'
+          = link_to image_tag("linkedin.png", class: "contact_icons-xs"), "https://www.linkedin.com/pub/drew-haines/47/863/614", class: "contact_links", target: '_blank'
+          = link_to image_tag("github.png", class: "contact_icons-xs"), "https://github.com/drewhaines", class: "contact_links", target: '_blank'
+
 / **********************************  Slide 2  ***************************************
 .slide_2
-  %p#page_title Who we Are
-  %p#titles.matts_title Matt Haines CPA, CEO
-  #matt_image
-    .circle2
-  %p#info_matt
-    Matt joins the team with over 4 years of experience from the top firms in the Accounting and Finance industry including KPMG, LLP and BDO USA, LLP.
-    %br
-    %br
-    His entrepreneurial drive
-    and excitement about software has lead him to help create Devco.  Matt maintains the financial health of Devco while remaining
-    an integral part of the design and development team.
-    %br
-    %br
-    Matt's passion for business is shown through making Devco a place
-    where people WANT to do business.  This happens by being fair, reliable and fostering lasting relationships with other professionals.
-    %br
-    %span.block.text-center.right_2
-      = link_to image_tag("twitter.png", class: "twitter_icon"), "https://twitter.com/m_haines25", class: "contact_links", target: '_blank'
-      = link_to image_tag("linkedin.png", class: "contact_icons"), "https://www.linkedin.com/pub/matt-haines-cpa/32/4a6/758", class: "contact_links", target: '_blank'
-      = link_to image_tag("github.png", class: "contact_icons"), "https://github.com/mattdmdevco", class: "contact_links", target: '_blank'
-
+  .hidden-xs
+    %p#page_title Who we Are
+    %p#titles.matts_title Matt Haines CPA, CEO
+    .row
+      .col-xs-4
+        #matt_image
+          .circle2
+      .col-xs-6
+        %p#info_matt
+          Matt joins the team with over 4 years of experience from the top firms in the Accounting and Finance industry including KPMG, LLP and BDO USA, LLP.
+          %br
+          %br
+          His entrepreneurial drive
+          and excitement about software has lead him to help create Devco.  Matt maintains the financial health of Devco while remaining
+          an integral part of the design and development team.
+          %br
+          %br
+          Matt's passion for business is shown through making Devco a place
+          where people WANT to do business.  This happens by being fair, reliable and fostering lasting relationships with other professionals.
+          %br
+          %span.block.text-center.right_2
+            = link_to image_tag("twitter.png", class: "twitter_icon"), "https://twitter.com/m_haines25", class: "contact_links", target: '_blank'
+            = link_to image_tag("linkedin.png", class: "contact_icons"), "https://www.linkedin.com/pub/matt-haines-cpa/32/4a6/758", class: "contact_links", target: '_blank'
+            = link_to image_tag("github.png", class: "contact_icons"), "https://github.com/mattdmdevco", class: "contact_links", target: '_blank'
+  .visible-xs
+    .row
+      .col-xs-12
+        %p#page_title-xs Who we Are
+    .row
+      .col-xs-12
+        %p#titles-xs.text-center Matt Haines CPA, CEO
+    .row
+      .col-xs-12.text-center
+        #matt_image-xs
+          .circle2-xs
+    .space-6
+    .row
+      .col-xs-12
+        %p#info_matt-xs
+          Matt joins the team with over 4 years of experience from the top firms in the Accounting and Finance industry including KPMG, LLP and BDO USA, LLP.
+          %br
+          %br
+          Matt's passion for business is shown through making Devco a place
+          where people WANT to do business.  This happens by being fair, reliable and fostering lasting relationships with other professionals.
+          %br
+    .row
+      .col-xs-12
+        %p
+          %span.block.text-center
+            = link_to image_tag("twitter.png", class: "twitter_icon-xs"), "https://twitter.com/m_haines25", class: "contact_links", target: '_blank'
+            = link_to image_tag("linkedin.png", class: "contact_icons-xs"), "https://www.linkedin.com/pub/matt-haines-cpa/32/4a6/758", class: "contact_links", target: '_blank'
+            = link_to image_tag("github.png", class: "contact_icons-xs"), "https://github.com/mattdmdevco", class: "contact_links", target: '_blank'
 = image_tag "arrow.png", :class=>"arrow", :id=>"arrow_2"
 = image_tag "arrow_left.png", :class=>"arrow_left", :id=>"arrow_left_2"

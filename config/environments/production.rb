@@ -10,7 +10,7 @@ DevCo::Application.configure do
 		:enable_starttls_auto => true
 	}
   
-  Paperclip.options[:command_path] = ":rails_root/public"
+
   
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -88,4 +88,7 @@ DevCo::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  Rails.application.config.assets.paths << "/home/rails/current/public/assets"
+
 end

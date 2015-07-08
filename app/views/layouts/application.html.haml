@@ -1,6 +1,7 @@
 !!!
 %html
   %head
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %title
       DevCo
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
@@ -16,9 +17,11 @@
         .col-xs-5
           = image_tag("Logo.png", :id => "Logo")
         .col-xs-1
+      .visible-xs
+        .space-
       .row
-        .col-xs-12#nav_wrapper
-          .hidden-xs
+        .hidden-xs
+          .col-xs-12#nav_wrapper
             .row
               .col-xs-12.text-center
                 .row
@@ -30,20 +33,26 @@
                     %a.nav_title.menu_title.no_wrap#menu_3{:href => root_path+"#about_us"} About Us
                   .col-xs-6.col-md-3
                     %a.nav_title.menu_title.no_wrap#menu_4.menu_title{:href => contact_path} Contact
-          .visible-xs
+        .visible-xs
+          .col-xs-12#nav_wrapper_2
             .row
               .col-xs-12.text-center
                 .row
                   .col-xs-6.col-md-3
-                    %a.nav_title.menu_title.small_font.no_wrap#menu_1{:href => root_path+"#what_we_do"} What We Do
+                    %a.nav_title.menu_title.small_font.no_wrap#menu_1-xs{:href => root_path+"#what_we_do"} What We Do
                   .col-xs-6.col-md-3
-                    %a.nav_title.menu_title.small_font.no_wrap#menu_2{:href => root_path+"#how_we_work"} How We Work
+                    %a.nav_title.menu_title.small_font.no_wrap#menu_2-xs{:href => root_path+"#how_we_work"} How We Work
                   .col-xs-6.col-md-3
-                    %a.nav_title.menu_title.small_font.no_wrap#menu_3{:href => root_path+"#about_us"} About Us
+                    %a.nav_title.menu_title.small_font.no_wrap#menu_3-xs{:href => root_path+"#about_us"} About Us
                   .col-xs-6.col-md-3
-                    %a.nav_title.menu_title.small_font.no_wrap#menu_4.menu_title{:href => contact_path} Contact
+                    %a.nav_title.menu_title.small_font.no_wrap#menu_4-xs.menu_title{:href => contact_path} Contact
+          .space-8
       .row
         .col-xs-12
           = yield
-= link_to image_tag("Logo.png", :id => "Logo_2"), root_path
+.visible-xs
+  = link_to image_tag("Logo.png", :id => "Logo_2-xs"), root_path
+.hidden-xs
+  = link_to image_tag("Logo.png", :id => "Logo_2"), root_path
+
 
